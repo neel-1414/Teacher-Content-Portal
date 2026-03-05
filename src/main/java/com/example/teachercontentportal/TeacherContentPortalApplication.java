@@ -1,4 +1,4 @@
-package com.example.Teacher_Content_Portal;
+package com.example.teachercontentportal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
