@@ -1,4 +1,4 @@
-package com.example.teachercontentportal;
+package com.portal.teachercontentportal;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
