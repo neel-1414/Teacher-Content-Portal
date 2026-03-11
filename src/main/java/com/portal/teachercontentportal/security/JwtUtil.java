@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class JwtUtil {
 
-    private static final String SECRET = "mysecretkey";
+    private static final String SECRET = System.getenv("JWT_SECRET_STRING");
 
     public static String generateToken(String teacherId, String role) {
 
