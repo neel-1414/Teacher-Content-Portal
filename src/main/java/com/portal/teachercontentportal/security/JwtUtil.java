@@ -12,12 +12,13 @@ public class JwtUtil {
     public static String generateToken(String teacherId, String role) {
 
         Algorithm algorithm = Algorithm.HMAC256(SECRET);
+        final long Expiration = 3600000;
 
         return JWT.create()
                 .withSubject(teacherId)
                 .withClaim("role", role)
                 .withIssuedAt(new Date())
-                .withExpiresAt(new Date(System.currentTimeMillis() + 3600000))
+                .withExpiresAt(new Date(System.currentTimeMillis() + Expiration))
                 .sign(algorithm);
     }
     public static DecodedJWT validateToken(String token) {
