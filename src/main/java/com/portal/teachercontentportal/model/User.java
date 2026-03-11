@@ -13,9 +13,11 @@ public class User {
     @Column(nullable = false)
     private String password;
     @Column(nullable = false)
-    private String role;
+    @Enumerated(EnumType.STRING) // added string enum type to role
+    private Role role;
 
-    public User(String name, String password,String teacherId,String role)
+
+    public User(String name, String password,String teacherId,Role role)
     {
         this.name = name;
         this.password = password;
@@ -56,11 +58,11 @@ public class User {
     {
         this.password = password;
     }
-    public String getRole()
+    public Role getRole()
     {
         return role;
     }
-    public void setRole(String role)
+    public void setRole(Role role)
     {
         this.role = role;
     }
