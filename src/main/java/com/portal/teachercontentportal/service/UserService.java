@@ -14,8 +14,8 @@ public class UserService {
     {
         return userRepository.save(user);
     }
-    public Optional<User> getTeacherByTeacherId(String TeacherId)
+    public Optional<User> getUserByUserId(String userId)
     {
-        return userRepository.findByTeacherId(TeacherId);
+        return userRepository.findByTeacherId(userId);
     }
 }
