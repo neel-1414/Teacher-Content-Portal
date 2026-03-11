@@ -1,2 +1,2 @@
 # Teacher-Content-Portal
-mini project implemented through java backend 
+Mini project implemented through java backend 
