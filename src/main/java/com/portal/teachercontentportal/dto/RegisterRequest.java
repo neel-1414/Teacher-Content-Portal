@@ -5,28 +5,33 @@ public class RegisterRequest {
     private String password;
     private Role role;
 
-    public String getTeacherId()
+    public RegisterRequest()
     {
-        return teacherId;
+    }
+
+    public String getUserId()
+    {
+        return userId;
+    }
+    public void setUserId(String userId)
+    {
+        this.userId=userId;
     }
     public String getPassword()
     {
         return password;
     }
+
     public Role getRole()
     {
         return role;
     }
-    public void setTeacherId(String id)
-    {
-        this.teacherId = id;
-    }
     public void setPassword(String password)
     {
-        this.password = password;
+        this.password=password;
     }
     public void setRole(Role role)
     {
-        this.role = role;
+        this.role=role;
     }
 }
