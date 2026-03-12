@@ -7,6 +7,7 @@ public class RegisterRequest {
 
     public RegisterRequest()
     {
+
     }
 
     public String getUserId()
@@ -21,14 +22,14 @@ public class RegisterRequest {
     {
         return password;
     }
+    public void setPassword(String password)
+    {
+        this.password=password;
+    }
 
     public Role getRole()
     {
         return role;
-    }
-    public void setPassword(String password)
-    {
-        this.password=password;
     }
     public void setRole(Role role)
     {
