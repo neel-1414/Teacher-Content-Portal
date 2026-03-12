@@ -5,5 +5,5 @@ import java.util.Optional;
 public interface UserRepository extends JpaRepository<User, Long> {
     // Rather than using User user = findByTeacherId(String userId)  using optional
     // stops the null pointer exception -> optional is a box which may contain value or may be empty
-    Optional<User> findByTeacherId(String userId);
+    Optional<User> findByUserId(String userId);
 }
