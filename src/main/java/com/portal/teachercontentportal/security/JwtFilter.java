@@ -16,8 +16,8 @@ public class JwtFilter extends OncePerRequestFilter {
         if(header != null && header.startsWith("Bearer ")) {
             String token = header.substring(7);
             DecodedJWT jwt = JwtUtil.validateToken(token);
-            String teacherId = jwt.getSubject();
-            System.out.println("Authenticated user: " + teacherId);
+            String userId = jwt.getSubject();
+            System.out.println("Authenticated user: " + userId);
         }
 
         chain.doFilter(request, response);

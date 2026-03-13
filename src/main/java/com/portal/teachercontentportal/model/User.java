@@ -1,5 +1,6 @@
 package com.portal.teachercontentportal.model;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -14,8 +15,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false)
-    private String name;
-    @Column(nullable = false,unique = true) // this value cannot be null and should be unique
+//    private String name;
+//    @Column(nullable = false,unique = true) // this value cannot be null and should be unique
     private String userId;
     @Column(nullable = false)
     private String password;
@@ -26,10 +27,15 @@ public class User {
 
     public User(String name, String password,String userId,Role role)
     {
-        this.name = name;
+//        this.name = name;
         this.password = password;
         this.userId = userId;
         this.role = role;
     }
 
+    public User(String userId, String password, Role role) {
+     this.userId=userId;
+     this.password = password;
+     this.role = role;
+    }
 }

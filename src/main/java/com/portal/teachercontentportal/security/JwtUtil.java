@@ -9,13 +9,13 @@ public class JwtUtil {
 
     private static final String SECRET = System.getenv("JWT_SECRET_STRING");
 
-    public static String generateToken(String teacherId, String role) {
+    public String generateToken(String userId, String role) {
 
         Algorithm algorithm = Algorithm.HMAC256(SECRET);
         final long Expiration = 3600000;
 
         return JWT.create()
-                .withSubject(teacherId)
+                .withSubject(userId)
                 .withClaim("role", role)
                 .withIssuedAt(new Date())
                 .withExpiresAt(new Date(System.currentTimeMillis() + Expiration))
