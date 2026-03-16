@@ -21,12 +21,10 @@ public class JwtFilter extends OncePerRequestFilter {
                                     @NonNull FilterChain chain) throws ServletException, IOException {
 
          final String path = request.getServletPath();
-        if(path.equals("/login"))
-        {
-            chain.doFilter(request,response);
+        if(path.equals("/login")) {
+            chain.doFilter(request, response);
             return;
         }
-
         String header = request.getHeader("Authorization");
         if(header != null && header.startsWith("Bearer ")) {
             String token = header.substring(7);
