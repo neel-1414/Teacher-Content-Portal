@@ -13,11 +13,6 @@ public class AuthService {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
-//    public User RegisterUser(@NonNull User user)
-//    {
-//        user.setPassword(passwordEncoder.encode(user.getPassword()));
-//        return userRepository.save(user);
-//    }
     public Optional<User> getUserByUserId(String userId)
     {
         return userRepository.findByUserId(userId);
