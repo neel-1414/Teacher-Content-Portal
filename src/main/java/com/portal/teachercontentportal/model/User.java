@@ -15,8 +15,6 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false)
-//    private String name;
-//    @Column(nullable = false,unique = true) // this value cannot be null and should be unique
     private String userId;
     @Column(nullable = false)
     private String password;

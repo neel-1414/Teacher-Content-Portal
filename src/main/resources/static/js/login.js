@@ -20,8 +20,17 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
             throw new Error("Invalid User ID or password");
         }
         const data = await response.json();
-        localStorage.setItem("token", data.token);
-        window.location.href = "dashboard.html"
+        const token = data.token;
+        localStorage.setItem("token", token);
+        const payload = parseJwt(token);
+        const role = payload.role;
+        if(role == "TEACHER"){
+        window.location.href = "teacherdashboard.html"
+        }
+        else {
+        window.location.href = "studentdashboard.html"
+        }
+
     }
     catch(error)
     {
@@ -29,3 +38,9 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     }
 
 });
+function parseJwt(token)
+{
+    const payload = token.split('.')[1];
+    const decodedPayload = atob(payload);
+    return JSON.parse(decodedPayload);
+}
