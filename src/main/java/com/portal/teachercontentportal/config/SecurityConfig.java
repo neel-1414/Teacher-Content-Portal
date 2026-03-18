@@ -38,9 +38,9 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                                 .requestMatchers("/login").permitAll()
                                 .requestMatchers("/admin/**").hasRole("ADMIN")
-                                .requestMatchers("/users/**").hasRole("ADMIN")
                                 .requestMatchers("/content/delete/**").hasAnyRole("TEACHER", "ADMIN")
-                                .requestMatchers("/student/upload/**").hasRole("TEACHER")
+                                .requestMatchers("/content/upload/**").hasRole("TEACHER")
+
 
                         .anyRequest().authenticated()
                 ) // every other request MUST be authenticated like for /courses /users

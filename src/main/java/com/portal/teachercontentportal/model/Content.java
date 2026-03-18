@@ -10,6 +10,8 @@ public class Content {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    private String fileUrl;
+
     private String title;
     private String subject;
 

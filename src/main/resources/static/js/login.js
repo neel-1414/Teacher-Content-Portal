@@ -21,7 +21,14 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
         }
         const data = await response.json();
         localStorage.setItem("token", data.token);
-        window.location.href = "dashboard.html"
+        const payload = parseJwt(data.token);
+        const role = payload.role;
+        if(role == "TEACHER"){
+        window.location.href = "teacher-dashboard.html"
+        }
+        else {
+        window.location.href = "student-dashboard.html"
+        }
     }
     catch(error)
     {
@@ -29,3 +36,9 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     }
 
 });
+function parseJwt()
+{
+    const payload = token.split('.')[1];
+    const decodedPayload = atob(payload);
+    return JSON.parse(decodedPayload);
+}
