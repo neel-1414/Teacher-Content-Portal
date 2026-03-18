@@ -34,12 +34,13 @@ The system implements authentication and will later support content uploads, use
 * [x] JWT Filter
 * [x] Spring Security Configuration
 * [x] Authentication backend implementation
+* [x] Implement **UserController**
+
 
 ---
 
 ## Future Goals
 
-* [ ] Implement **UserController**
 * [ ] Implement **ContentController**
 * [ ] AWS S3 integration for content storage
 * [ ] Optimized **Frontend UI**
