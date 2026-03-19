@@ -15,8 +15,6 @@ public class Content {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String fileUrl;
-
     private String title;
 
     @Column(nullable = false)

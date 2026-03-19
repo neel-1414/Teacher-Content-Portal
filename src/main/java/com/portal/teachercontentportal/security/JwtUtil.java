@@ -10,7 +10,7 @@ import java.util.Date;
 public class JwtUtil {
 
     private static final String SECRET = System.getenv("JWT_SECRET_STRING");
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public JwtUtil(UserRepository userRepository) {
         this.userRepository = userRepository;
