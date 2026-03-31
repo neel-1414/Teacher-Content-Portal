@@ -34,13 +34,16 @@ public class JwtFilter extends OncePerRequestFilter {
             chain.doFilter(request, response);
             return;
         }
+
         String header = request.getHeader("Authorization");
-        if(header != null && header.startsWith("Bearer ")) {
+
+        if(header != null && header.startsWith("Bearer "))
+        {
             String token = header.substring(7);
             DecodedJWT jwt = jwtUtil.validateToken(token);
             String userId = jwt.getSubject();
             String role = jwt.getClaim("role").asString();
-
+            System.out.println("ROLE FROM JWT: " + role);
             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
                     userId,
                     null,

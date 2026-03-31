@@ -22,11 +22,13 @@ public class S3Service {
     {
         String fileName = UUID.randomUUID() + " "+ file.getOriginalFilename();
         try {
+
             PutObjectRequest putRequest = PutObjectRequest.builder()
                     .bucket(bucketName)
                     .key(fileName)
                     .contentType(file.getContentType())
                     .build();
+
             s3Client.putObject(
                     putRequest,
                     software.amazon.awssdk.core.sync.RequestBody.fromBytes(file.getBytes())
