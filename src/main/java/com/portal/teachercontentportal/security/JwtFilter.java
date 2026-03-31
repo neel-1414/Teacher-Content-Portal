@@ -28,9 +28,9 @@ public class JwtFilter extends OncePerRequestFilter {
 
          final String path = request.getServletPath();
         if(path.equals("/login")||
-                path.startsWith("/pages/**") ||
-                path.startsWith("/css/**") ||
-                path.startsWith("/js/**")) {
+                path.startsWith("/pages/") ||
+                path.startsWith("/css/") ||
+                path.startsWith("/js/")) {
             chain.doFilter(request, response);
             return;
         }
@@ -39,7 +39,8 @@ public class JwtFilter extends OncePerRequestFilter {
             String token = header.substring(7);
             DecodedJWT jwt = jwtUtil.validateToken(token);
             String userId = jwt.getSubject();
-            String role = jwt.getClaim("role").toString();
+            String role = jwt.getClaim("role").asString();
+
             UsernamePasswordAuthenticationToken authentication = new UsernamePasswordAuthenticationToken(
                     userId,
                     null,
