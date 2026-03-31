@@ -19,9 +19,9 @@ public class ContentService {
         this.userRepository=userRepository;
     }
 
-    public Content uploadContent(String title, String fileUrl, Long userId)
+    public Content uploadContent(String title, String fileUrl, String userId)
     {
-        User user=userRepository.findById(userId)
+        User user=userRepository.findByUserId(userId)
                 .orElseThrow(()->new RuntimeException("User not found"));
 
         Content content=new Content();
@@ -37,9 +37,9 @@ public class ContentService {
         return contentRepository.findAllByOrderByCreatedAtDesc();
     }
 
-    public List<Content> getContentByUser(Long userId) {
+    public List<Content> getContentByUser(String userId) {
 
-        User user = userRepository.findById(userId)
+        User user = userRepository.findByUserId(userId)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
         return contentRepository.findUploadedBy(user);
