@@ -34,6 +34,7 @@ public class ContentController {
         String fileUrl = s3Service.fileUpload(file);
 
         String userId = auth.getPrincipal().toString();
+
         Content content = contentService.uploadContent(title, fileUrl, userId);
         return ResponseEntity.ok(content);
     }
