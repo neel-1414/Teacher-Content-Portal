@@ -35,14 +35,13 @@ The system implements authentication and will later support content uploads, use
 * [x] Spring Security Configuration
 * [x] Authentication backend implementation
 * [x] Implement **UserController**
-
+* [X] Implement **ContentController**
+* [X] AWS S3 integration for content storage
 
 ---
 
 ## Future Goals
 
-* [ ] Implement **ContentController**
-* [ ] AWS S3 integration for content storage
 * [ ] Optimized **Frontend UI**
 * [ ] Role-based authorization improvements
 * [ ] Content upload and retrieval APIs
