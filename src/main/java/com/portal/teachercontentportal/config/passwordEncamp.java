@@ -9,6 +9,6 @@ public class passwordEncamp {
 String raw = "pass123";
 String hash = "";
 
-System.out.println(encoder.matches(raw, hash));
+System.out.println(encoder.encode(raw));
     }
 }
