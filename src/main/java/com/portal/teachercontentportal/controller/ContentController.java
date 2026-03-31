@@ -18,7 +18,6 @@ public class ContentController {
 
     private final ContentService contentService;
     private final S3Service s3Service;
-    Authentication auth= SecurityContextHolder.getContext().getAuthentication();
     public ContentController(ContentService contentService, S3Service s3Service)
     {
         this.contentService = contentService;
@@ -29,8 +28,9 @@ public class ContentController {
     public ResponseEntity<Content> uploadContent(
             @RequestParam String title,
             @RequestParam MultipartFile file
-    ) {
-
+    )
+    {
+        Authentication auth= SecurityContextHolder.getContext().getAuthentication();
         String fileUrl = s3Service.fileUpload(file);
 
         String userId = auth.getPrincipal().toString();
@@ -47,7 +47,7 @@ public class ContentController {
 
     @GetMapping("/my")
     public ResponseEntity<List<Content>> getMyContent() {
-
+        Authentication auth= SecurityContextHolder.getContext().getAuthentication();
         String userId = auth.getPrincipal().toString() ;
 
         return ResponseEntity.ok(contentService.getContentByUser(userId));

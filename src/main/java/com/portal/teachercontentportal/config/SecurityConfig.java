@@ -38,8 +38,8 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                                 .requestMatchers("/login").permitAll()
                                 .requestMatchers("/admin/**").hasRole("ADMIN")
-                                .requestMatchers("/content/delete/**").hasAnyRole("TEACHER", "ADMIN")
-                                .requestMatchers("/content/upload/**").hasRole("TEACHER")
+                                .requestMatchers("/content/delete/").hasAnyRole("TEACHER", "ADMIN")
+                                .requestMatchers("/content/upload/").hasRole("TEACHER")
 
 
                         .anyRequest().authenticated()
