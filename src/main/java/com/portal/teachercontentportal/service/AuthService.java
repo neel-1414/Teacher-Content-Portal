@@ -20,7 +20,7 @@ public class AuthService {
 
     public User authenticateUser(String userId, String password)
     {
-        User user = userRepository.findByUserId(userId).orElseThrow(()-> new RuntimeException("User not found"));
+        User user = userRepository.findByUserId(userId).orElseThrow(() -> new RuntimeException("User not found"));
 
         if(!passwordEncoder.matches(password, user.getPassword()))
         {
