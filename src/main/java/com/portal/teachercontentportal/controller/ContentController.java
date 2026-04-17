@@ -1,5 +1,6 @@
 package com.portal.teachercontentportal.controller;
 
+import com.portal.teachercontentportal.dto.ContentResponse;
 import com.portal.teachercontentportal.model.Content;
 import com.portal.teachercontentportal.service.ContentService;
 import com.portal.teachercontentportal.service.S3Service;
@@ -8,7 +9,6 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.util.List;
 
 @RestController
@@ -45,11 +45,19 @@ public class ContentController {
     }
 
     @GetMapping("/my")
-    public ResponseEntity<List<Content>> getMyContent() {
+    public ResponseEntity<List<ContentResponse>> getMyContent() {
         Authentication auth= SecurityContextHolder.getContext().getAuthentication();
-        String userId = auth.getPrincipal().toString() ;
+        String userId = auth.getPrincipal().toString();
+        List<Content> contents = contentService.getContentByUser(userId);
 
-        return ResponseEntity.ok(contentService.getContentByUser(userId));
+        List<ContentResponse> response = contents.stream().map(c -> {
+            return new ContentResponse(
+                    c.getId(),
+                    c.getTitle(), s3Service.generatePresignedUrl(c.getFileUrl())
+            );
+        }).toList();
+
+        return ResponseEntity.ok(response);
     }
 
     @DeleteMapping("/{id}")
