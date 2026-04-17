@@ -45,7 +45,15 @@ public class ContentService {
         return contentRepository.findUploadedBy(user);
     }
 
-    public void deleteContent(Long contentId) {
-        contentRepository.deleteById(contentId);
+    public void deleteContent(Long contentId, String userId)
+    {
+        Content content=contentRepository.findById(contentId)
+                .orElseThrow(()-> new RuntimeException("Content not found"));
+
+        if(!content.getUploadedBy().getUserId().equals(userId))
+        {
+            throw new RuntimeException("You are not allowed to delete this content");
+        }
+        contentRepository.delete(content);
     }
 }
