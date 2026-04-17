@@ -6,7 +6,7 @@ function logout() {
   window.location.href = "../pages/login.html";
 }
 
-// 📥 LOAD FILES
+// LOAD FILES
 async function loadFiles() {
   const res = await fetch('/content/my', {
     headers: {
@@ -23,20 +23,18 @@ async function loadFiles() {
   renderFiles();
 }
 
-// 🖥️ RENDER FILES
 function renderFiles() {
   const list = document.getElementById('fileList');
 
-  list.innerHTML = files.map(f => `
+  list.innerHTML = files.map( f => `
     <div class="file-row">
-      <div>${f.filename}</div>
-      <div>${f.fileInput}</div>
+      <div>${f.title}</div>
       <button class="delete" onclick="deleteFile(${f.id})">Delete</button>
     </div>
   `).join('');
 }
 
-// 🗑️ DELETE FILE
+// DELETE FILE
 async function deleteFile(id) {
   if (!confirm("Delete file?")) return;
 
@@ -54,7 +52,7 @@ async function deleteFile(id) {
   }
 }
 
-// ⬆️ UPLOAD FILE
+// UPLOAD FILE
 async function uploadFile() {
   const file = document.getElementById('fileInput').files[0];
   const title = document.getElementById('fileName').value;
