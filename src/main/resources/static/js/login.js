@@ -1,6 +1,6 @@
 document.getElementById("loginForm").addEventListener("submit", async function(e){
      e.preventDefault();
-    const userId = document.getElementById("userid").value.trim();
+    const userId = document.getElementById("userId").value.trim();
     const password = document.getElementById("password").value.trim();
     const errormessage = document.getElementById("error-message");
     errormessage.textContent = "";
@@ -25,10 +25,10 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
         const payload = parseJwt(token);
         const role = payload.role;
         if(role == "TEACHER"){
-        window.location.href = "teacherdashboard.html"
+        window.location.href = "../pages/teacherdashboard.html"
         }
         else {
-        window.location.href = "studentdashboard.html"
+        window.location.href = "../pages/studentdashboard.html"
         }
 
     }

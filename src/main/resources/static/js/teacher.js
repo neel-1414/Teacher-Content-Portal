@@ -1,10 +1,9 @@
 
 let files = [];
 
-// 🔐 LOGOUT
 function logout() {
   localStorage.removeItem("token");
-  window.location.href = "/login.html";
+  window.location.href = "../pages/login.html";
 }
 
 // 📥 LOAD FILES
@@ -30,8 +29,8 @@ function renderFiles() {
 
   list.innerHTML = files.map(f => `
     <div class="file-row">
-      <div>${f.name}</div>
-      <div>${f.type}</div>
+      <div>${f.filename}</div>
+      <div>${f.fileInput}</div>
       <button class="delete" onclick="deleteFile(${f.id})">Delete</button>
     </div>
   `).join('');
@@ -41,7 +40,7 @@ function renderFiles() {
 async function deleteFile(id) {
   if (!confirm("Delete file?")) return;
 
-  const res = await fetch('/api/files/' + id, {
+  const res = await fetch('/content/my/' + id, {
     method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + localStorage.getItem('token')
@@ -97,7 +96,7 @@ function closeModal() {
 // 🚀 INIT
 function init() {
   if (!localStorage.getItem("token")) {
-    window.location.href = "/login.html";
+    window.location.href = "../pages/login.html";
     return;
   }
 

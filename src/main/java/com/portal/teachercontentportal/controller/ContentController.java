@@ -3,7 +3,6 @@ package com.portal.teachercontentportal.controller;
 import com.portal.teachercontentportal.model.Content;
 import com.portal.teachercontentportal.service.ContentService;
 import com.portal.teachercontentportal.service.S3Service;
-import org.antlr.v4.runtime.Token;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -30,7 +29,7 @@ public class ContentController {
             @RequestParam MultipartFile file
     )
     {
-        Authentication auth= SecurityContextHolder.getContext().getAuthentication();
+           Authentication auth= SecurityContextHolder.getContext().getAuthentication();
         String fileUrl = s3Service.fileUpload(file);
 
         String userId = auth.getPrincipal().toString();
