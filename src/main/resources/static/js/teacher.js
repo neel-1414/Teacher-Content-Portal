@@ -6,7 +6,7 @@ function logout() {
   window.location.href = "../pages/login.html";
 }
 
-// LOAD FILES
+
 async function loadFiles() {
   const res = await fetch('/content/my', {
     headers: {
@@ -29,16 +29,16 @@ function renderFiles() {
   list.innerHTML = files.map( f => `
     <div class="file-row">
       <div>${f.title}</div>
+      <a href="${f.fileUrl}" target="_blank">View</a>
       <button class="delete" onclick="deleteFile(${f.id})">Delete</button>
     </div>
   `).join('');
 }
 
-// DELETE FILE
 async function deleteFile(id) {
   if (!confirm("Delete file?")) return;
 
-  const res = await fetch('/content/my/' + id, {
+  const res = await fetch('/content/delete/' + id, {
     method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + localStorage.getItem('token')
@@ -52,7 +52,6 @@ async function deleteFile(id) {
   }
 }
 
-// UPLOAD FILE
 async function uploadFile() {
   const file = document.getElementById('fileInput').files[0];
   const title = document.getElementById('fileName').value;
@@ -82,7 +81,6 @@ async function uploadFile() {
   }
 }
 
-// 📦 MODAL
 function openModal() {
   document.getElementById('uploadModal').style.display = 'flex';
 }
@@ -91,7 +89,6 @@ function closeModal() {
   document.getElementById('uploadModal').style.display = 'none';
 }
 
-// 🚀 INIT
 function init() {
   if (!localStorage.getItem("token")) {
     window.location.href = "../pages/login.html";
