@@ -38,7 +38,7 @@ function renderFiles() {
 async function deleteFile(id) {
   if (!confirm("Delete file?")) return;
 
-  const res = await fetch('/content/my/' + id, {
+  const res = await fetch('/content/delete/' + id, {
     method: 'DELETE',
     headers: {
       Authorization: 'Bearer ' + localStorage.getItem('token')

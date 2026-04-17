@@ -60,7 +60,7 @@ public class ContentController {
         return ResponseEntity.ok(response);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteContent(@PathVariable Long id)
     {
         contentService.deleteContent(id);
