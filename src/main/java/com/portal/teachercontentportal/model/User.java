@@ -27,7 +27,7 @@ public class User {
     private Role role;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "year_name")
+    @Column(name = "year")
     private Year year;
 
     @Enumerated(EnumType.STRING)
