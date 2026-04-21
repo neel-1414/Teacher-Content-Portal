@@ -37,14 +37,14 @@ The system implements authentication and will later support content uploads, use
 * [x] Implement **UserController**
 * [X] Implement **ContentController**
 * [X] AWS S3 integration for content storage
+* [X] Content upload and retrieval APIs
+* [X] Role-based authorization improvements
 
 ---
 
 ## Future Goals
 
 * [ ] Optimized **Frontend UI**
-* [ ] Role-based authorization improvements
-* [ ] Content upload and retrieval APIs
 * [ ] Deployment on cloud infrastructure
 
 ---
