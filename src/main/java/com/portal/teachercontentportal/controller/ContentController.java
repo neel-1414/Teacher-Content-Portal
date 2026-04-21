@@ -63,7 +63,9 @@ public class ContentController {
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<String> deleteContent(@PathVariable Long id)
     {
-        contentService.deleteContent(id);
+        Authentication auth=SecurityContextHolder.getContext().getAuthentication();
+        String userId=auth.getName();
+        contentService.deleteContent(id, userId);
         return ResponseEntity.ok("Content deleted successfully");
     }
 }
