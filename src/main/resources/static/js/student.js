@@ -2,38 +2,56 @@ async function loadFolders() {
 
     const token = localStorage.getItem("token");
 
-    const res = await fetch("/student/folders", {
-        headers: {
-            Authorization: "Bearer " + token
-        }
-    });
-
-    if (!res.ok) {
-        alert("Failed to load folders");
+    if (!token) {
+        location.href = "login.html";
         return;
     }
 
-    const data = await res.json();
+    try {
+        const res = await fetch("/student/folders", {
+            headers: {
+                Authorization: "Bearer " + token
+            }
+        });
 
-    let html = "";
+        if (res.status === 401 || res.status === 403) {
+            localStorage.clear();
+            location.href = "login.html";
+            return;
+        }
 
-    data.forEach(folder => {
+        if (!res.ok) {
+            return;
+        }
 
-        html += `
-            <div class="card">
-                <h3>${folder.folderName}</h3>
-                <p>${folder.year} Year</p>
-                <p>${folder.branch}</p>
+        const data = await res.json();
 
-                <button class="openBtn"
-                    onclick="loadFiles(${folder.id})">
-                    Open Folder
-                </button>
-            </div>
-        `;
-    });
+        let html = "";
 
-    document.getElementById("folders").innerHTML = html;
+        if (data.length === 0) {
+            html = `<div class="empty">Nothing Present</div>`;
+        } else {
+            data.forEach(folder => {
+                html += `
+                    <div class="card">
+                        <h3>${folder.folderName}</h3>
+                        <p>📚 ${folder.year} Year</p>
+                        <p>🏫 ${folder.branch}</p>
+
+                        <button class="openBtn"
+                            onclick="loadFiles(${folder.id})">
+                            Open Folder
+                        </button>
+                    </div>
+                `;
+            });
+        }
+
+        document.getElementById("folders").innerHTML = html;
+
+    } catch (error) {
+        console.log(error);
+    }
 }
 
 
@@ -42,46 +60,38 @@ async function loadFiles(folderId) {
 
     const token = localStorage.getItem("token");
 
-    const res = await fetch("/student/folders/" + folderId, {
+    const res = await fetch("/student/files/" + folderId, {
         headers: {
             Authorization: "Bearer " + token
         }
     });
 
-    if (!res.ok) {
-        alert("Access denied or no files");
-        return;
-    }
-
     const data = await res.json();
 
     let html = "";
 
-    if(data.length === 0){
-        html = "<p>No files in this folder.</p>";
+    if (data.length === 0) {
+        html = `<div class="empty">Nothing Present</div>`;
+    } else {
+        data.forEach(file => {
+            html += `
+                <div class="file">
+                    📄 <a href="${file.fileUrl}" target="_blank">
+                        ${file.title}
+                    </a>
+                </div>
+            `;
+        });
     }
-
-    data.forEach(file => {
-
-        html += `
-            <div class="file">
-                <h4>${file.title}</h4>
-                <a href="${file.fileUrl}" target="_blank">
-                    View File
-                </a>
-            </div>
-        `;
-    });
 
     document.getElementById("files").innerHTML = html;
 }
 
 
 
-function logout() {
+function logout(){
     localStorage.clear();
     location.href = "login.html";
 }
-
 
 loadFolders();
