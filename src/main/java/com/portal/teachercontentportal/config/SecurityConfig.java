@@ -40,7 +40,7 @@ public class SecurityConfig {
                                 .requestMatchers("/admin/**").hasRole("ADMIN")
                                 .requestMatchers("/content/delete/").hasAnyRole("TEACHER", "ADMIN")
                                 .requestMatchers("/content/upload/").hasRole("TEACHER")
-
+                        .requestMatchers("/student/**").hasRole("STUDENT")
 
                         .anyRequest().authenticated()
                 ) // every other request MUST be authenticated like for /courses /users

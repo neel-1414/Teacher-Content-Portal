@@ -33,9 +33,9 @@ public class StudentController {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String userID = auth.getName();
         User student = userRepository.findByUserId(userID).orElseThrow(()->new RuntimeException("User Not found"));
-        return folderRepository.findByYearandBranchandEnabledTrue(student.getYear(),student.getBranch());
+        return folderRepository.findByYearAndBranchAndEnabledTrue(student.getYear(),student.getBranch());
     }
-    @GetMapping("/folders/{folder}")
+    @GetMapping("/folders/{folderId}")
     public List<Content> getFiles(@PathVariable Long folderId)
     {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
@@ -47,6 +47,6 @@ public class StudentController {
         {
             throw new RuntimeException("Access Denied");
         }
-        return contentRepository.findByFolderId(folderId);
+        return contentRepository.findByFolder_Id(folderId);
     }
 }
