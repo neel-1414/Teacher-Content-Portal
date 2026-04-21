@@ -27,6 +27,10 @@ public class Content {
     @JoinColumn(name="uploaded_by", nullable = false)
     private User uploadedBy;
 
+    @ManyToOne
+    @JoinColumn(name = "folder_id")
+    private Folder folder;
+
     public Content(){}
 
     public Content(String title, String fileUrl, LocalDateTime createdAt, User uploadedBy)
