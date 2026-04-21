@@ -49,7 +49,7 @@ public class ContentService {
     {
         Content content=contentRepository.findById(contentId)
                 .orElseThrow(()-> new RuntimeException("Content not found"));
-
+        
         if(!content.getUploadedBy().getUserId().equals(userId))
         {
             throw new RuntimeException("You are not allowed to delete this content");
