@@ -12,33 +12,54 @@
 <header>
     <div class="header-left">
         <h2>Teacher Dashboard</h2>
-        <p>Manage and upload your class content</p>
+        <p>Manage folders and upload files inside folders</p>
     </div>
+
     <button class="logout" onclick="logout()">Logout</button>
 </header>
 
 <div class="container">
+
     <div class="top-bar">
         <div>
-            <h3>Uploaded Files</h3>
-            <p>View, upload, and delete learning resources</p>
+            <h3>Folders</h3>
+            <p>Create folders and add files inside folders</p>
         </div>
-        <button onclick="openModal()">Upload File</button>
+
+        <button onclick="openFolderModal()">Add Folder</button>
     </div>
 
-    <div id="fileList"></div>
+    <div id="folderList"></div>
+
 </div>
 
+<!-- Create Folder Modal -->
+<div class="modal" id="folderModal">
+    <div class="modal-content">
+        <h3>Create Folder</h3>
+
+        <input type="text" id="folderName" placeholder="Folder Name">
+        <input type="text" id="year" placeholder="Year">
+        <input type="text" id="branch" placeholder="Branch">
+
+        <div class="modal-actions">
+            <button onclick="createFolder()">Create</button>
+            <button class="secondary-btn" onclick="closeFolderModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- Upload File Modal -->
 <div class="modal" id="uploadModal">
     <div class="modal-content">
         <h3>Upload File</h3>
 
-        <input type="text" id="fileName" placeholder="Enter file name">
+        <input type="text" id="fileName" placeholder="File Name">
         <input type="file" id="fileInput">
 
         <div class="modal-actions">
             <button onclick="uploadFile()">Upload</button>
-            <button class="secondary-btn" onclick="closeModal()">Cancel</button>
+            <button class="secondary-btn" onclick="closeUploadModal()">Cancel</button>
         </div>
     </div>
 </div>

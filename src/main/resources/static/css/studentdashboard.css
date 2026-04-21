@@ -1,67 +1,189 @@
-body{
+/* studentdashboard.css */
+
+*{
     margin:0;
-    font-family:Arial, sans-serif;
-    background:#f4f6f8;
+    padding:0;
+    box-sizing:border-box;
 }
 
+body{
+    font-family:Arial, sans-serif;
+    background:#eef2f7;
+    min-height:100vh;
+    color:#1e293b;
+}
+
+/* Header */
 header{
-    background:#2563eb;
+    background:linear-gradient(90deg,#0f172a,#1e3a5f);
     color:white;
-    padding:15px 30px;
+    padding:22px 28px;
     display:flex;
     justify-content:space-between;
     align-items:center;
 }
 
+.header-left h2{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:4px;
+}
+
+.header-left p{
+    font-size:14px;
+    color:#cbd5e1;
+}
+
 .logout{
-    background:red;
+    background:#475569;
     color:white;
     border:none;
-    padding:8px 14px;
-    border-radius:6px;
-    cursor:pointer;
-}
-
-.container{
-    padding:30px;
-}
-
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-    gap:20px;
-}
-
-.card{
-    background:white;
-    padding:20px;
+    padding:10px 18px;
     border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
 }
 
-.card h3{
-    margin-top:0;
+.logout:hover{
+    background:#334155;
 }
 
-.openBtn{
+/* Main Container */
+.container{
+    max-width:1000px;
+    margin:28px auto;
+    padding:0 20px;
+}
+
+/* Top Card */
+.top-box{
+    background:white;
+    border-radius:18px;
+    padding:24px 28px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 8px 18px rgba(0,0,0,0.06);
+    margin-bottom:22px;
+}
+
+.top-box h2{
+    font-size:22px;
+    margin-bottom:6px;
+    color:#0f172a;
+}
+
+.top-box p{
+    color:#64748b;
+    font-size:15px;
+}
+
+.uploadBtn{
     background:#2563eb;
     color:white;
     border:none;
-    padding:10px 14px;
-    border-radius:6px;
+    padding:12px 22px;
+    border-radius:12px;
     cursor:pointer;
-    margin-top:10px;
+    font-weight:600;
+    transition:0.3s;
 }
 
+.uploadBtn:hover{
+    background:#1d4ed8;
+}
+
+/* Folder Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:18px;
+}
+
+/* Folder Card */
+.card{
+    background:white;
+    border-radius:18px;
+    padding:22px;
+    box-shadow:0 8px 18px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-4px);
+}
+
+.card h3{
+    font-size:20px;
+    margin-bottom:10px;
+    color:#0f172a;
+}
+
+.card p{
+    color:#64748b;
+    margin:5px 0;
+    font-size:14px;
+}
+
+.openBtn{
+    margin-top:14px;
+    width:100%;
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:11px;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.openBtn:hover{
+    background:#1d4ed8;
+}
+
+/* Files */
 .file{
     background:white;
-    padding:15px;
-    margin:10px 0;
-    border-radius:10px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    padding:18px 20px;
+    border-radius:16px;
+    margin-bottom:14px;
+    box-shadow:0 6px 16px rgba(0,0,0,0.05);
 }
 
 .file a{
     color:#2563eb;
     text-decoration:none;
+    font-weight:600;
 }
+
+.file a:hover{
+    text-decoration:underline;
+}
+
+/* Empty State */
+.empty{
+    background:#f8fafc;
+    border:2px dashed #cbd5e1;
+    border-radius:18px;
+    padding:55px 20px;
+    text-align:center;
+    color:#64748b;
+    font-size:20px;
+    font-weight:600;
+}
+
+.empty small{
+    display:block;
+    margin-top:10px;
+    font-size:15px;
+    font-weight:400;
+}
+
+/* Divider */
+hr{
+    border:none;
+    height:1px;
+    background:#dbe2ea;
+    margin:28px 0;
+}z

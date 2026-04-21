@@ -833,3 +833,316 @@ java.io.IOException: Premature EOF
 2026-04-21 22:47:23.073 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@363f380
 2026-04-21 22:47:23.073 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3402b819
 2026-04-21 22:47:23.073 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1f2bbda0
+2026-04-22 00:21:20,579 [    401]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.project.impl.ProjectStoreFactory: com.intellij.configurationScript.providers.ConfigurationScriptProjectStoreFactory attempts to override com.intellij.configurationStore.PlatformLangProjectStoreFactory, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-04-22 00:21:20,594 [    416]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.modcommand.ModCommandExecutor: com.jetbrains.rdserver.ui.intentions.RemoteModCommandExecutor attempts to override com.intellij.lang.impl.modcommand.ModCommandExecutorImpl, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-04-22 00:21:20,920 [    742]   WARN - #c.i.o.v.n.p.FSRecords - Records storage [/home/neel/.cache/JetBrains/IntelliJIdea2026.1/caches/records.dat] was in use by process [OwnershipInfo{owner pid: 5726, acquired at: 1776790341209}] which is not exist now (wasn't closed properly/crashed?) -> re-acquiring forcibly
+2026-04-22 00:21:20,922 [    744]   WARN - #c.i.o.v.n.p.m.c.VFSContentStorageOverMMappedFile - Content map[/home/neel/.cache/JetBrains/IntelliJIdea2026.1/caches/content.dat.hashToId] is empty (or dropped) while content storage is not: re-building map from the storage
+2026-04-22 00:21:20,945 [    767]   WARN - #c.i.o.v.n.p.PersistentFSLoader - [VFS load problem]: VFS wasn't safely shut down: records.wasClosedProperly is false
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+SLF4J(E): A service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: org.slf4j.jul.JULServiceProvider not a subtype
+2026-04-22 00:21:21,205 [   1027]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Default.Dark is deprecated for new UI themes, use Checkbox.Background.Default instead
+2026-04-22 00:21:21,205 [   1027]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Default.Dark is deprecated for new UI themes, use Checkbox.Border.Default instead
+2026-04-22 00:21:21,205 [   1027]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Selected.Dark is deprecated for new UI themes, use Checkbox.Border.Selected instead
+2026-04-22 00:21:21,205 [   1027]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Selected.Dark is deprecated for new UI themes, use Checkbox.Foreground.Selected instead
+2026-04-22 00:21:21,205 [   1027]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Focus.Wide.Dark is deprecated for new UI themes, use Checkbox.Focus.Wide instead
+2026-04-22 00:21:21,205 [   1027]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Default.Dark is not supported and therefore ignored
+2026-04-22 00:21:21,205 [   1027]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Selected.Dark is not supported and therefore ignored
+2026-04-22 00:21:21,206 [   1028]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Disabled.Dark is deprecated for new UI themes, use Checkbox.Background.Disabled instead
+2026-04-22 00:21:21,206 [   1028]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Selected.Dark is deprecated for new UI themes, use Checkbox.Background.Selected instead
+2026-04-22 00:21:21,206 [   1028]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Disabled.Dark is deprecated for new UI themes, use Checkbox.Border.Disabled instead
+2026-04-22 00:21:21,206 [   1028]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Disabled.Dark is deprecated for new UI themes, use Checkbox.Foreground.Disabled instead
+2026-04-22 00:21:21,206 [   1028]   WARN - #c.i.s.c.i.StationSocketConnectionLoop - Discovery connection failed with NoSuchFileException (/run/user/1000/jb.station.sock)
+2026-04-22 00:21:21,653 [   1475]   WARN - #c.i.o.v.n.p.PersistentFSLoader - [VFS load problem]: NOT_CLOSED_PROPERLY recovered, no problems remain
+2026-04-22 00:21:22.410 [DBG] [oshi.util.FileUtil] No {} file found from ClassLoader {}:[Ljava.lang.Object;@7f5ae22b
+2026-04-22 00:21:22.417 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5e4a4a6a
+2026-04-22 00:21:22.418 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2d844c06
+2026-04-22 00:21:22.420 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@37b511f0
+2026-04-22 00:21:22.422 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@28e615f9
+2026-04-22 00:21:22.422 [DBG] [oshi.software.os.linux.LinuxOperatingSystem] os-release: {}:[Ljava.lang.Object;@79f8130d
+2026-04-22 00:21:22.423 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@40cb9862
+2026-04-22 00:21:22.426 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@65344252
+2026-04-22 00:21:22.426 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@34975e15
+2026-04-22 00:21:22.426 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5847dd7a
+2026-04-22 00:21:22.426 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1fac42c
+2026-04-22 00:21:22.427 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@469b2093
+2026-04-22 00:21:22.427 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@48f2a9a3
+2026-04-22 00:21:22.427 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@79346b95
+2026-04-22 00:21:22.427 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@66b44398
+2026-04-22 00:21:26,233 [   6055]   WARN - #c.i.s.c.i.StationSocketConnectionLoop - RecentProjects connection failed with NoSuchFileException (/run/user/1000/jb.station.sock)
+2026-04-22 00:21:26,556 [   6378]   WARN - #c.i.v.l.u.StorageId$Directory - Failed to move /home/neel/.cache/JetBrains/IntelliJIdea2026.1/vcs-log/Teacher_f83344ca_7025d08e/index to /home/neel/.cache/JetBrains/IntelliJIdea2026.1/vcs-log/Teacher_f83344ca_7025d08e/index
+java.nio.file.NoSuchFileException: /home/neel/.cache/JetBrains/IntelliJIdea2026.1/vcs-log/Teacher_f83344ca_7025d08e/index
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:94)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:108)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:114)
+	at java.base/sun.nio.fs.UnixFileSystem.move(UnixFileSystem.java:845)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.move(UnixFileSystemProvider.java:289)
+	at com.intellij.platform.core.nio.fs.TracingFileSystemProvider.move(TracingFileSystemProvider.java:170)
+	at java.base/java.nio.file.Files.move(Files.java:1319)
+	at com.intellij.vcs.log.util.StorageId.cleanupAllStorageFiles(PersistentUtil.kt:58)
+	at com.intellij.vcs.log.data.VcsLogStorageImpl.cleanupStorageFiles(VcsLogStorageImpl.java:396)
+	at com.intellij.vcs.log.data.VcsLogStorageImpl.lambda$createStorageAndIndexBackend$4(VcsLogStorageImpl.java:389)
+	at com.intellij.util.io.IOUtil.openCleanOrResetBroken(IOUtil.java:318)
+	at com.intellij.vcs.log.data.VcsLogStorageImpl.createStorageAndIndexBackend(VcsLogStorageImpl.java:374)
+	at com.intellij.vcs.log.data.VcsLogData.createStorageAndIndex(VcsLogData.kt:360)
+	at com.intellij.vcs.log.data.VcsLogData.<init>(VcsLogData.kt:181)
+	at com.intellij.vcs.log.impl.VcsLogManager.<init>(VcsLogManager.kt:86)
+	at com.intellij.vcs.log.impl.IdeVcsLogManager.<init>(IdeVcsLogManager.kt:36)
+	at com.intellij.vcs.log.impl.IdeVcsProjectLog.createLogManager(IdeVcsProjectLog.kt:58)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase.getOrCreateLogManager(VcsProjectLogBase.kt:211)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase.access$getOrCreateLogManager(VcsProjectLogBase.kt:55)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase$getOrCreateLogManager$2.invokeSuspend(VcsProjectLogBase.kt:198)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase$getOrCreateLogManager$2.invoke(VcsProjectLogBase.kt)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase$getOrCreateLogManager$2.invoke(VcsProjectLogBase.kt)
+	at com.intellij.platform.backend.observation.PlatformActivityTrackerService$trackConfigurationActivity$2$1.invokeSuspend(PlatformActivityTrackerService.kt:76)
+	at com.intellij.platform.backend.observation.PlatformActivityTrackerService$trackConfigurationActivity$2$1.invoke(PlatformActivityTrackerService.kt)
+	at com.intellij.platform.backend.observation.PlatformActivityTrackerService$trackConfigurationActivity$2$1.invoke(PlatformActivityTrackerService.kt)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndspatched(Undispatched.kt:67)
+	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:43)
+	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:165)
+	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source)
+	at com.intellij.platform.backend.observation.PlatformActivityTrackerService.trackConfigurationActivity(PlatformActivityTrackerService.kt:75)
+	at com.intellij.platform.backend.observation.TrackingUtil.trackActivity(util.kt:23)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase.getOrCreateLogManager(VcsProjectLogBase.kt:197)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase.reinitUnsafe(VcsProjectLogBase.kt:173)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase.access$reinitUnsafe(VcsProjectLogBase.kt:55)
+	at com.intellij.vcs.log.impl.VcsProjectLogBase$reinitAsync$1.invokeSuspend(VcsProjectLogBase.kt:167)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:610)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runDefaultDispatcherTask(CoroutineScheduler.kt:1194)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:906)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:775)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:762)
+2026-04-22 00:21:26,606 [   6428]   WARN - #c.i.v.g.r.GitRepositoriesHolder - State of repository RepositoryId(projectId=ProjectId#hhgtio1uu6n74l276v83, rootPath=/home/neel/PROJECTS/Teacher_Content_Portal/Teacher_Content_Portal) is not synchronized. Known repositories are: 
+2026-04-22 00:22:22.432 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@77b129d2
+2026-04-22 00:22:22.433 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@74e6f552
+2026-04-22 00:22:22.433 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2009e1d9
+2026-04-22 00:22:22.433 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5fb2d8d9
+2026-04-22 00:22:22.433 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@21338544
+2026-04-22 00:22:22.433 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@62bcb855
+2026-04-22 00:23:22.439 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@56d1273f
+2026-04-22 00:23:22.439 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7781cf37
+2026-04-22 00:23:22.439 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1ce40328
+2026-04-22 00:23:22.439 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2779e3e9
+2026-04-22 00:23:22.440 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@78cec0e6
+2026-04-22 00:23:22.440 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@14f50bf
+2026-04-22 00:24:22.445 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1729830f
+2026-04-22 00:24:22.445 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@14553ebc
+2026-04-22 00:24:22.445 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7759e5c8
+2026-04-22 00:24:22.446 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3b630c63
+2026-04-22 00:24:22.446 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6009c1fb
+2026-04-22 00:24:22.446 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5d94b398
+2026-04-22 00:25:22.450 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1d3dbfc6
+2026-04-22 00:25:22.451 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6e35e42b
+2026-04-22 00:25:22.451 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7f1fa66a
+2026-04-22 00:25:22.451 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@61d9509
+2026-04-22 00:25:22.451 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@76aec983
+2026-04-22 00:25:22.451 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@377b7fc1
+2026-04-22 00:26:22.455 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@56e064fb
+2026-04-22 00:26:22.456 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5e703689
+2026-04-22 00:26:22.456 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3705158a
+2026-04-22 00:26:22.456 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@52c9d31
+2026-04-22 00:26:22.456 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@50bee6d3
+2026-04-22 00:26:22.456 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@fa55633
+2026-04-22 00:27:22.460 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@67a90774
+2026-04-22 00:27:22.460 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6bc62d08
+2026-04-22 00:27:22.460 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@62c85365
+2026-04-22 00:27:22.460 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@8c96c60
+2026-04-22 00:27:22.460 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@277458aa
+2026-04-22 00:27:22.461 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7d009f21
+2026-04-22 00:28:22.464 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3f8b9e6e
+2026-04-22 00:28:22.464 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5bffb073
+2026-04-22 00:28:22.465 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@410bc372
+2026-04-22 00:28:22.465 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2d003f47
+2026-04-22 00:28:22.465 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4e9bbc67
+2026-04-22 00:28:22.465 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6841e1ef
+2026-04-22 00:29:22.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@54b97699
+2026-04-22 00:29:22.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5eb4278e
+2026-04-22 00:29:22.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4e4f67e6
+2026-04-22 00:29:22.470 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7f391314
+2026-04-22 00:29:22.470 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@60abafd4
+2026-04-22 00:29:22.470 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1f5c6c18
+2026-04-22 00:30:22.474 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2e5127ec
+2026-04-22 00:30:22.474 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@324603f2
+2026-04-22 00:30:22.475 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@488d1e3c
+2026-04-22 00:30:22.475 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@708fdf71
+2026-04-22 00:30:22.475 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@57c6e8cb
+2026-04-22 00:30:22.475 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@551d3852
+2026-04-22 00:31:22.479 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6db1d0bf
+2026-04-22 00:31:22.479 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@59cd020b
+2026-04-22 00:31:22.479 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@22ac24ea
+2026-04-22 00:31:22.479 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@63f49cdd
+2026-04-22 00:31:22.479 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@239c34
+2026-04-22 00:31:22.479 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@31cf1b61
+2026-04-22 00:32:22.483 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5bbaea4b
+2026-04-22 00:32:22.483 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4de23406
+2026-04-22 00:32:22.483 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@18e2167d
+2026-04-22 00:32:22.483 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2088ceed
+2026-04-22 00:32:22.484 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2cec8005
+2026-04-22 00:32:22.484 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@70f2c39a
+2026-04-22 00:33:22.487 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1992f554
+2026-04-22 00:33:22.487 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6d12f8f4
+2026-04-22 00:33:22.488 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@585b5141
+2026-04-22 00:33:22.488 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@58831faa
+2026-04-22 00:33:22.488 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@563569bb
+2026-04-22 00:33:22.488 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2c9aeed1
+2026-04-22 00:34:22.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@28d6cc56
+2026-04-22 00:34:22.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@57c322c7
+2026-04-22 00:34:22.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@598fc273
+2026-04-22 00:34:22.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@832a58b
+2026-04-22 00:34:22.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@16986ca7
+2026-04-22 00:34:22.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5803a1a9
+2026-04-22 00:35:22.496 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2fcc950e
+2026-04-22 00:35:22.496 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@53218869
+2026-04-22 00:35:22.496 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@48529bda
+2026-04-22 00:35:22.496 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@613b08e7
+2026-04-22 00:35:22.496 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2a14952b
+2026-04-22 00:35:22.496 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@75a922c0
+2026-04-22 00:36:22.499 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5326e55c
+2026-04-22 00:36:22.500 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1b5c752b
+2026-04-22 00:36:22.500 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3b7fb88b
+2026-04-22 00:36:22.500 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@381de945
+2026-04-22 00:36:22.500 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5cf5e71f
+2026-04-22 00:36:22.500 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@24782487
+2026-04-22 00:37:22.503 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@58a3daeb
+2026-04-22 00:37:22.503 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7f417ec8
+2026-04-22 00:37:22.503 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2cf6181a
+2026-04-22 00:37:22.504 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6dd6046
+2026-04-22 00:37:22.504 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@40ef96f4
+2026-04-22 00:37:22.504 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@34ac171f
+2026-04-22 00:38:22.508 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6b6fea2b
+2026-04-22 00:38:22.508 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7dfce085
+2026-04-22 00:38:22.508 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1d470ac8
+2026-04-22 00:38:22.508 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@12bc4890
+2026-04-22 00:38:22.508 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@696c65e
+2026-04-22 00:38:22.508 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1c74f6c1
+2026-04-22 00:39:22.511 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5f6e312f
+2026-04-22 00:39:22.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2c84e524
+2026-04-22 00:39:22.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5aeeecc
+2026-04-22 00:39:22.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2d5b65b
+2026-04-22 00:39:22.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2c1c0867
+2026-04-22 00:39:22.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@273a7505
+2026-04-22 00:40:22.515 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@46d00e5d
+2026-04-22 00:40:22.516 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7272ae23
+2026-04-22 00:40:22.516 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@469c9f70
+2026-04-22 00:40:22.516 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6f601cfe
+2026-04-22 00:40:22.516 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@298445a9
+2026-04-22 00:40:22.516 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4e60e50c
+2026-04-22 00:41:22.519 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@388bfd45
+2026-04-22 00:41:22.519 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@70646c56
+2026-04-22 00:41:22.519 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1629b28e
+2026-04-22 00:41:22.519 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@506b828d
+2026-04-22 00:41:22.520 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@37ed3c10
+2026-04-22 00:41:22.520 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6438f067
+2026-04-22 00:42:22.523 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5d4da95b
+2026-04-22 00:42:22.523 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@48d4b8e7
+2026-04-22 00:42:22.523 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@22b6dcd4
+2026-04-22 00:42:22.523 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1a626ffa
+2026-04-22 00:42:22.523 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2ad50a9c
+2026-04-22 00:42:22.523 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@472b9ca1
+2026-04-22 00:43:22.527 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@21a7132b
+2026-04-22 00:43:22.527 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@b7ece8e
+2026-04-22 00:43:22.528 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2dd3ffb
+2026-04-22 00:43:22.528 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@68892242
+2026-04-22 00:43:22.528 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@712e4a33
+2026-04-22 00:43:22.528 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@c59f026
+2026-04-22 00:44:22.531 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1d6635ba
+2026-04-22 00:44:22.531 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5834d68b
+2026-04-22 00:44:22.532 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3b0abd8f
+2026-04-22 00:44:22.532 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@239ddba7
+2026-04-22 00:44:22.532 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@f7ae18b
+2026-04-22 00:44:22.532 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7184fe61
+2026-04-22 00:45:22.536 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@16b2af37
+2026-04-22 00:45:22.536 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@46f4e7dd
+2026-04-22 00:45:22.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2819e941
+2026-04-22 00:45:22.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@231a8ffc
+2026-04-22 00:45:22.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@20d257bf
+2026-04-22 00:45:22.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@41799677
+2026-04-22 00:46:22.541 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@63d5885b
+2026-04-22 00:46:22.541 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1f6ea9a5
+2026-04-22 00:46:22.541 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3e39a759
+2026-04-22 00:46:22.541 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@74e59706
+2026-04-22 00:46:22.541 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3bbd4e91
+2026-04-22 00:46:22.541 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@51f4ebc2
+2026-04-22 00:47:22.544 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@322501cc
+2026-04-22 00:47:22.544 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1977e5b1
+2026-04-22 00:47:22.544 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@473c0e10
+2026-04-22 00:47:22.544 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3891ad18
+2026-04-22 00:47:22.544 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@22a0e0a7
+2026-04-22 00:47:22.545 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@45cd32f
+2026-04-22 00:48:22.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7c5fe4b7
+2026-04-22 00:48:22.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@fc8cd21
+2026-04-22 00:48:22.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@30ff851d
+2026-04-22 00:48:22.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4d8ad02e
+2026-04-22 00:48:22.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4e73ff74
+2026-04-22 00:48:22.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@79b825e
+2026-04-22 00:49:22.551 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5095adf5
+2026-04-22 00:49:22.551 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@460c9d37
+2026-04-22 00:49:22.552 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7eb5b830
+2026-04-22 00:49:22.552 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@532f49b2
+2026-04-22 00:49:22.552 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2e28bc27
+2026-04-22 00:49:22.552 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@cef69f0
+2026-04-22 00:50:22.555 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2d151905
+2026-04-22 00:50:22.555 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@14f275a9
+2026-04-22 00:50:22.555 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2b6f4b17
+2026-04-22 00:50:22.555 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@e5cf868
+2026-04-22 00:50:22.555 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@b040597
+2026-04-22 00:50:22.555 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@c5c6663
+2026-04-22 00:51:22.559 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7f0fc05d
+2026-04-22 00:51:22.559 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@48e3002b
+2026-04-22 00:51:22.559 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@76a1aeee
+2026-04-22 00:51:22.559 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@29209582
+2026-04-22 00:51:22.559 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@28aca5d3
+2026-04-22 00:51:22.559 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@781e1ab5
+2026-04-22 00:52:22.563 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@17fa152b
+2026-04-22 00:52:22.563 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@164b1441
+2026-04-22 00:52:22.563 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4a4cef3
+2026-04-22 00:52:22.563 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@23f8ea65
+2026-04-22 00:52:22.564 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@64ece07c
+2026-04-22 00:52:22.564 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2a4b09bc
+2026-04-22 00:53:22.567 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@891b04b
+2026-04-22 00:53:22.567 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@740d3360
+2026-04-22 00:53:22.567 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6586f145
+2026-04-22 00:53:22.567 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4da76121
+2026-04-22 00:53:22.568 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@48319336
+2026-04-22 00:53:22.568 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@553a2f63
+2026-04-22 00:54:22.571 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1e02f77b
+2026-04-22 00:54:22.571 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1cdaa4c2
+2026-04-22 00:54:22.572 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1e4a6e70
+2026-04-22 00:54:22.572 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3215cff
+2026-04-22 00:54:22.572 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@a11dacf
+2026-04-22 00:54:22.572 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@432493fb
+2026-04-22 00:55:22.602 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6f9e0063
+2026-04-22 00:55:22.602 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@71d016e2
+2026-04-22 00:55:22.603 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@64a5d94
+2026-04-22 00:55:22.603 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@20a4c031
+2026-04-22 00:55:22.603 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3f26415e
+2026-04-22 00:55:22.603 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4eb0275e
+2026-04-22 00:56:22.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@59f030a
+2026-04-22 00:56:22.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7db14c32
+2026-04-22 00:56:22.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7f2dc5e4
+2026-04-22 00:56:22.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5bcb7bf9
+2026-04-22 00:56:22.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2631b4d9
+2026-04-22 00:56:22.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5116acf1
+2026-04-22 00:57:22.611 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@741084d4
+2026-04-22 00:57:22.612 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1bec5119
+2026-04-22 00:57:22.612 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3d4a28ea
+2026-04-22 00:57:22.612 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@39ade4c
+2026-04-22 00:57:22.612 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@735cdccf
+2026-04-22 00:57:22.612 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@ac12f24
+2026-04-22 00:58:22.615 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5f76267c
+2026-04-22 00:58:22.615 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@196562ae
+2026-04-22 00:58:22.615 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@338750ae
+2026-04-22 00:58:22.615 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@387ddb60
+2026-04-22 00:58:22.615 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@56565fd5
+2026-04-22 00:58:22.615 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@649437a3
+2026-04-22 00:59:22.620 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5d195742
+2026-04-22 00:59:22.620 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@65e59e13
+2026-04-22 00:59:22.621 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7be36784
+2026-04-22 00:59:22.621 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@434a8377
+2026-04-22 00:59:22.621 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@54fe6f1b
+2026-04-22 00:59:22.621 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1d227691

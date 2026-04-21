@@ -1,124 +1,231 @@
-let files = [];
+let folders = [];
+let selectedFolderId = null;
 
+/* Logout */
 function logout() {
   localStorage.removeItem("token");
   window.location.href = "../pages/login.html";
 }
 
-async function loadFiles() {
-  const res = await fetch('/content/my', {
+/* Load Folders */
+async function loadFolders() {
+
+  const res = await fetch("/folders", {
     headers: {
-      Authorization: 'Bearer ' + localStorage.getItem('token')
+      Authorization: "Bearer " + localStorage.getItem("token")
     }
   });
 
-  if (res.status === 401) {
+  if (res.status === 401 || res.status === 403) {
     logout();
     return;
   }
 
-  files = await res.json();
-  renderFiles();
+  folders = await res.json();
+  renderFolders();
 }
 
-function renderFiles() {
-  const list = document.getElementById('fileList');
+/* Render Folders */
+function renderFolders() {
 
-  if (!files || files.length === 0) {
+  const list = document.getElementById("folderList");
+
+  if (!folders || folders.length === 0) {
     list.innerHTML = `
-      <div class="empty-state">
-        <h3>No files uploaded yet</h3>
-        <p>Upload your first file using the button above.</p>
-      </div>
-    `;
+            <div class="empty-state">
+                <h3>No folders created yet</h3>
+                <p>Create your first folder using the button above.</p>
+            </div>
+        `;
     return;
   }
 
-  list.innerHTML = files.map(f => `
-    <div class="file-row">
-      <div>${f.title}</div>
-      <a href="${f.fileUrl}" target="_blank">View</a>
-      <button class="delete" onclick="deleteFile(${f.id})">Delete</button>
-    </div>
-  `).join('');
+  list.innerHTML = folders.map(folder => `
+        <div class="file-row">
+            <div>
+                <strong>${folder.folderName}</strong><br>
+                <small>${folder.year} Year - ${folder.branch}</small>
+            </div>
+
+            <div style="display:flex; gap:10px;">
+                <button onclick="openFolder(${folder.id}, '${folder.folderName}')">
+                    Open
+                </button>
+
+                <button onclick="openUploadModal(${folder.id})">
+                    Add File
+                </button>
+            </div>
+        </div>
+    `).join("");
 }
 
-async function deleteFile(id) {
-  if (!confirm("Delete file?")) return;
+/* Open Folder and Show Files */
+async function openFolder(folderId, folderName) {
 
-  const res = await fetch('/content/delete/' + id, {
-    method: 'DELETE',
+  const res = await fetch("/student/files/" + folderId, {
     headers: {
-      Authorization: 'Bearer ' + localStorage.getItem('token')
+      Authorization: "Bearer " + localStorage.getItem("token")
+    }
+  });
+
+  const files = await res.json();
+
+  const list = document.getElementById("fileList");
+
+  if (!files || files.length === 0) {
+    list.innerHTML = `
+            <div class="empty-state">
+                <h3>${folderName}</h3>
+                <p>No files inside this folder.</p>
+            </div>
+        `;
+    return;
+  }
+
+  list.innerHTML = `
+        <h3 style="margin-bottom:15px;">${folderName}</h3>
+        ${files.map(file => `
+            <div class="file-row">
+                <div>${file.title}</div>
+
+                <div style="display:flex; gap:10px;">
+                    <a href="${file.fileUrl}" target="_blank">View</a>
+
+                    <button onclick="deleteFile(${file.id}, ${folderId}, '${folderName}')">
+                        Delete
+                    </button>
+                </div>
+            </div>
+        `).join("")}
+    `;
+}
+
+/* Delete File */
+async function deleteFile(id, folderId, folderName) {
+
+  const ok = confirm("Delete this file?");
+  if (!ok) return;
+
+  const res = await fetch("/content/delete/" + id, {
+    method: "DELETE",
+    headers: {
+      Authorization: "Bearer " + localStorage.getItem("token")
     }
   });
 
   if (res.ok) {
-    loadFiles();
+    openFolder(folderId, folderName);
   } else {
     alert("Delete failed");
   }
 }
 
-async function uploadFile() {
-  const file = document.getElementById('fileInput').files[0];
-  const title = document.getElementById('fileName').value.trim();
+/* Create Folder */
+async function createFolder() {
 
-  if (!title) {
-    alert("Enter file name");
+  const folderName = document.getElementById("folderName").value.trim();
+  const year = document.getElementById("year").value.trim();
+  const branch = document.getElementById("branch").value.trim();
+
+  if (!folderName || !year || !branch) {
+    alert("Fill all fields");
     return;
   }
 
-  if (!file) {
-    alert("Select a file");
+  const res = await fetch("/folders/upload", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + localStorage.getItem("token")
+    },
+    body: JSON.stringify({
+      folderName,
+      year,
+      branch
+    })
+  });
+
+  if (res.ok) {
+
+    closeFolderModal();
+
+    document.getElementById("folderName").value = "";
+    document.getElementById("year").value = "";
+    document.getElementById("branch").value = "";
+
+    loadFolders();
+
+  } else {
+    alert("Folder creation failed");
+  }
+}
+
+/* Upload File */
+function openUploadModal(folderId) {
+  selectedFolderId = folderId;
+  document.getElementById("uploadModal").style.display = "flex";
+}
+
+function closeUploadModal() {
+  document.getElementById("uploadModal").style.display = "none";
+}
+
+async function uploadFile() {
+
+  const title = document.getElementById("fileName").value.trim();
+  const file = document.getElementById("fileInput").files[0];
+
+  if (!title || !file) {
+    alert("Enter file name and select file");
     return;
   }
 
   const formData = new FormData();
   formData.append("title", title);
   formData.append("file", file);
+  formData.append("folderId", selectedFolderId);
 
-  const res = await fetch('/content/upload', {
-    method: 'POST',
+  const res = await fetch("/content/upload", {
+    method: "POST",
     headers: {
-      Authorization: 'Bearer ' + localStorage.getItem('token')
+      Authorization: "Bearer " + localStorage.getItem("token")
     },
     body: formData
   });
 
   if (res.ok) {
-    closeModal();
-    document.getElementById('fileName').value = "";
-    document.getElementById('fileInput').value = "";
-    loadFiles();
+
+    closeUploadModal();
+
+    document.getElementById("fileName").value = "";
+    document.getElementById("fileInput").value = "";
+
+    alert("Upload successful");
+
   } else {
     alert("Upload failed");
   }
 }
 
-function openModal() {
-  document.getElementById('uploadModal').style.display = 'flex';
+/* Folder Modal */
+function openFolderModal() {
+  document.getElementById("folderModal").style.display = "flex";
 }
 
-function closeModal() {
-  document.getElementById('uploadModal').style.display = 'none';
+function closeFolderModal() {
+  document.getElementById("folderModal").style.display = "none";
 }
 
+/* Init */
 function init() {
+
   if (!localStorage.getItem("token")) {
     window.location.href = "../pages/login.html";
     return;
   }
 
-  loadFiles();
+  loadFolders();
 }
-
-document.getElementById("uploadModal").addEventListener("click", function (e) {
-  if (e.target === this) closeModal();
-});
-
-document.addEventListener("keydown", function (e) {
-  if (e.key === "Escape") closeModal();
-});
 
 init();

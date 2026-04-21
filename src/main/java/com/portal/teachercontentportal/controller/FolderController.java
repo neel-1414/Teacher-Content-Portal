@@ -21,7 +21,7 @@ public class FolderController {
         this.userRepository=userRepository;
     }
 
-    @PostMapping
+    @PostMapping("/upload")
     public Folder createFolder(@RequestBody Folder folder, Principal principal)
     {
         User teacher=userRepository.findByUserId(principal.getName())
