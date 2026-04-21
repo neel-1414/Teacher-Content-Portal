@@ -26,7 +26,8 @@ public class ContentController {
     @PostMapping("/upload")
     public ResponseEntity<Content> uploadContent(
             @RequestParam String title,
-            @RequestParam MultipartFile file
+            @RequestParam MultipartFile file,
+            @RequestParam Long folderId
     )
     {
            Authentication auth= SecurityContextHolder.getContext().getAuthentication();
@@ -34,7 +35,7 @@ public class ContentController {
 
         String userId = auth.getPrincipal().toString();
 
-        Content content = contentService.uploadContent(title, fileUrl, userId);
+        Content content = contentService.uploadContent(title, fileUrl, userId, folderId);
         return ResponseEntity.ok(content);
     }
 
