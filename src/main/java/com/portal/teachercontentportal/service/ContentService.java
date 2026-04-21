@@ -42,7 +42,7 @@ public class ContentService {
         User user = userRepository.findByUserId(userId)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
-        return contentRepository.findUploadedBy(user);
+        return contentRepository.findByUploadedBy(user);
     }
 
     public void deleteContent(Long contentId, String userId)

@@ -28,18 +28,21 @@ public class Content {
     private User uploadedBy;
 
     @ManyToOne
-    @JoinColumn(name="folder_id", nullable = false)
+    @JoinColumn(name="folder_id")
     private Folder folder;
 
     public Content(){}
 
-    public Content(String title, String fileUrl, LocalDateTime createdAt, User uploadedBy, Folder folder)
-    {
-        this.title=title;
-        this.fileUrl=fileUrl;
-        this.createdAt=createdAt;
-        this.uploadedBy=uploadedBy;
-        this.folder=folder;
-    }
+    public Content(String title,
+                   String fileUrl,
+                   LocalDateTime createdAt,
+                   User uploadedBy,
+                   Folder folder) {
 
+        this.title = title;
+        this.fileUrl = fileUrl;
+        this.createdAt = createdAt;
+        this.uploadedBy = uploadedBy;
+        this.folder = folder;
+    }
 }

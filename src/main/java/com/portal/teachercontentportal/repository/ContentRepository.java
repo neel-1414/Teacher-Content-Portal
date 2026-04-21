@@ -8,8 +8,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface ContentRepository extends JpaRepository<Content, Long>{
-    List<Content> findUploadedBy(User user);
+    List<Content> findByUploadedBy(User user);
     List<Content> findAllByOrderByCreatedAtDesc();
-    List<Content> findByFolderId(Long folderId);
+    List<Content> findByFolder_Id(Long folderId);
     List<Content> findByFolder(Folder folder);
 }
