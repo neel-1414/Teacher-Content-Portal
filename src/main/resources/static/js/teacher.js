@@ -1,11 +1,9 @@
-
 let files = [];
 
 function logout() {
   localStorage.removeItem("token");
   window.location.href = "../pages/login.html";
 }
-
 
 async function loadFiles() {
   const res = await fetch('/content/my', {
@@ -26,7 +24,17 @@ async function loadFiles() {
 function renderFiles() {
   const list = document.getElementById('fileList');
 
-  list.innerHTML = files.map( f => `
+  if (!files || files.length === 0) {
+    list.innerHTML = `
+      <div class="empty-state">
+        <h3>No files uploaded yet</h3>
+        <p>Upload your first file using the button above.</p>
+      </div>
+    `;
+    return;
+  }
+
+  list.innerHTML = files.map(f => `
     <div class="file-row">
       <div>${f.title}</div>
       <a href="${f.fileUrl}" target="_blank">View</a>
@@ -54,7 +62,12 @@ async function deleteFile(id) {
 
 async function uploadFile() {
   const file = document.getElementById('fileInput').files[0];
-  const title = document.getElementById('fileName').value;
+  const title = document.getElementById('fileName').value.trim();
+
+  if (!title) {
+    alert("Enter file name");
+    return;
+  }
 
   if (!file) {
     alert("Select a file");
@@ -62,7 +75,7 @@ async function uploadFile() {
   }
 
   const formData = new FormData();
-  formData.append("title",title);
+  formData.append("title", title);
   formData.append("file", file);
 
   const res = await fetch('/content/upload', {
@@ -75,6 +88,8 @@ async function uploadFile() {
 
   if (res.ok) {
     closeModal();
+    document.getElementById('fileName').value = "";
+    document.getElementById('fileInput').value = "";
     loadFiles();
   } else {
     alert("Upload failed");
@@ -97,5 +112,13 @@ function init() {
 
   loadFiles();
 }
+
+document.getElementById("uploadModal").addEventListener("click", function (e) {
+  if (e.target === this) closeModal();
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") closeModal();
+});
 
 init();

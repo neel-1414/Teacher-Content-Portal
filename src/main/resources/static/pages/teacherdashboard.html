@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Dashboard</title>
-<link rel = "stylesheet" href="../css/teacherdasboard.css">
+    <link rel="stylesheet" href="../css/teacherdasboard.css">
 </head>
 
 <body>
 
 <header>
-    <h2>Teacher Dashboard</h2>
+    <div class="header-left">
+        <h2>Teacher Dashboard</h2>
+        <p>Manage and upload your class content</p>
+    </div>
     <button class="logout" onclick="logout()">Logout</button>
 </header>
 
 <div class="container">
-    <button onclick="openModal()">Upload File</button>
+    <div class="top-bar">
+        <div>
+            <h3>Uploaded Files</h3>
+            <p>View, upload, and delete learning resources</p>
+        </div>
+        <button onclick="openModal()">Upload File</button>
+    </div>
+
     <div id="fileList"></div>
 </div>
-
 
 <div class="modal" id="uploadModal">
     <div class="modal-content">
         <h3>Upload File</h3>
 
-        <input type="text" id="fileName" placeholder="File name">
-
+        <input type="text" id="fileName" placeholder="Enter file name">
         <input type="file" id="fileInput">
 
-        <button onclick="uploadFile()">Upload</button>
-        <button onclick="closeModal()">Cancel</button>
-
+        <div class="modal-actions">
+            <button onclick="uploadFile()">Upload</button>
+            <button class="secondary-btn" onclick="closeModal()">Cancel</button>
+        </div>
     </div>
 </div>
-<script src = "../js/teacher.js"></script>
+
+<script src="../js/teacher.js"></script>
 </body>
 </html>
