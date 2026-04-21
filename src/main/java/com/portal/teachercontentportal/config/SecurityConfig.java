@@ -37,9 +37,10 @@ public class SecurityConfig {
                 //disabled because only happens when user and server creates a session which is not the case for jwt
                 .authorizeHttpRequests(auth -> auth
                                 .requestMatchers("/login").permitAll()
+                        .requestMatchers("/folders/**").hasRole("TEACHER")
                                 .requestMatchers("/admin/**").hasRole("ADMIN")
                                 .requestMatchers("/content/delete/").hasAnyRole("TEACHER", "ADMIN")
-                                .requestMatchers("/content/upload/").hasRole("TEACHER")
+                                .requestMatchers("/content/**").hasRole("TEACHER")
                         .requestMatchers("/student/**").hasRole("STUDENT")
 
                         .anyRequest().authenticated()

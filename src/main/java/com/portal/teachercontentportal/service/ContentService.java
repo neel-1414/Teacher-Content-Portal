@@ -2,6 +2,8 @@ package com.portal.teachercontentportal.service;
 
 import com.portal.teachercontentportal.model.Content;
 import com.portal.teachercontentportal.model.User;
+import com.portal.teachercontentportal.model.Folder;
+import com.portal.teachercontentportal.repository.FolderRepository;
 import com.portal.teachercontentportal.repository.ContentRepository;
 import com.portal.teachercontentportal.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -13,22 +15,33 @@ import java.util.List;
 public class ContentService {
     private final ContentRepository contentRepository;
     private final UserRepository userRepository;
-    public ContentService(ContentRepository contentRepository, UserRepository userRepository)
+    private final FolderRepository folderRepository;
+    public ContentService(ContentRepository contentRepository, UserRepository userRepository, FolderRepository folderRepository)
     {
         this.contentRepository=contentRepository;
         this.userRepository=userRepository;
+        this.folderRepository=folderRepository;
     }
 
-    public Content uploadContent(String title, String fileUrl, String userId)
+    public Content uploadContent(String title, String fileUrl, String userId, Long folderId)
     {
         User user=userRepository.findByUserId(userId)
                 .orElseThrow(()->new RuntimeException("User not found"));
+
+        Folder folder=folderRepository.findById(folderId)
+                .orElseThrow(()->new RuntimeException("Folder not found"));
+
+        if(!folder.getTeacher().getId().equals(user.getId()))
+        {
+            throw new RuntimeException("Unauthorized");
+        }
 
         Content content=new Content();
         content.setTitle(title);
         content.setFileUrl(fileUrl);
         content.setCreatedAt(LocalDateTime.now());
         content.setUploadedBy(user);
+        content.setFolder(folder);
 
         return contentRepository.save(content);
     }
