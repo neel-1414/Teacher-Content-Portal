@@ -61,12 +61,12 @@ function renderFolders() {
                 <small>${folder.year} Year - ${folder.branch}</small>
             </div>
 
-            <div style="display:flex; gap:10px;">
-                <button onclick="openFolder(${folder.id})">
-                    Open
-                </button>
-            </div>
-        </div>
+            <div style="display:flex; gap:10px; justify-content:flex-end;">
+        <button onclick="openFolder(${folder.id})">Open</button>
+        <button class="delete" onclick="deleteFolderUI(${folder.id})">Delete</button>
+      </div>
+    </div>
+
     `).join("");
 }
 
@@ -134,3 +134,34 @@ window.onclick = function (e) {
     closeFolderModal();
   }
 };
+
+
+async function deleteFolderUI(folderId)
+{
+  const confirmDelete=confirm("Are you sure you want to delete this folder?\nAll files inside it will also be deleted.");
+  if(!confirmDelete) return;
+
+  const res=await fetch(`/folders/${folderId}`, {
+    method:"DELETE",
+    headers:{
+      Authorization: "Bearer "+localStorage.getItem("token")
+    }
+  });
+
+  if(res.status===401 || res.status===403)
+  {
+    logout();
+    return;
+  }
+
+  if (res.ok)
+  {
+    alert("Folder deleted successfully");
+    loadFolders();
+  }
+  else
+  {
+    const msg = await res.text();
+    alert(msg || "Folder deletion failed");
+  }
+}
