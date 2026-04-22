@@ -43,7 +43,7 @@ public class StudentController {
         User student = userRepository.findByUserId(userID).orElseThrow(()->new RuntimeException("User Not found"));
         Folder folder = folderRepository.findById(folderId).orElseThrow(()->new RuntimeException("Folder not found"));
 
-        if(student.getYear() != folder.getYear() || student.getBranch() != folder.getBranch() || !folder.isEnabled())
+        if(!student.getYear().equals(folder.getYear())|| !student.getBranch().equals(folder.getBranch()) || !folder.isEnabled())
         {
             throw new RuntimeException("Access Denied");
         }
