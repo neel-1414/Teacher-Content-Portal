@@ -68,4 +68,10 @@ public class ContentService {
         }
         contentRepository.delete(content);
     }
+
+
+    public void deleteContentByFolder(Long folderId)
+    {
+        contentRepository.deleteByFolderId(folderId);
+    }
 }
