@@ -1,5 +1,6 @@
 package com.portal.teachercontentportal.controller;
 
+import com.portal.teachercontentportal.dto.ContentResponse;
 import com.portal.teachercontentportal.model.Content;
 import com.portal.teachercontentportal.model.Folder;
 import com.portal.teachercontentportal.model.User;
@@ -10,7 +11,8 @@ import com.portal.teachercontentportal.repository.UserRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
-import java.util.List;
+import java.util.List;import com.portal.teachercontentportal.service.S3Service;
+
 
 @RestController
 @RequestMapping("/folders")
@@ -18,11 +20,13 @@ public class FolderController {
     private final FolderRepository folderRepository;
     private final UserRepository userRepository;
     private final ContentRepository contentRepository;
-    public FolderController(FolderRepository folderRepository, UserRepository userRepository,ContentRepository contentRepository)
+    private final S3Service s3Service;
+    public FolderController(FolderRepository folderRepository, UserRepository userRepository,ContentRepository contentRepository,S3Service s3Service)
     {
         this.contentRepository = contentRepository;
         this.folderRepository=folderRepository;
         this.userRepository=userRepository;
+        this.s3Service =  s3Service;
     }
 
     @PostMapping("/upload")
@@ -45,7 +49,7 @@ public class FolderController {
     }
 
     @GetMapping("/files/{folderId}")
-    public List<Content> getFilesInsideFolder(@PathVariable Long folderId,
+    public List<ContentResponse> getFilesInsideFolder(@PathVariable Long folderId,
                                               Principal principal) {
 
         User teacher = userRepository.findByUserId(principal.getName())
@@ -57,7 +61,14 @@ public class FolderController {
         if (!folder.getTeacher().getId().equals(teacher.getId())) {
             throw new RuntimeException("Unauthorized");
         }
+        List<Content> files = contentRepository.findByFolder(folder);
 
-        return contentRepository.findByFolder(folder);
+        return files.stream()
+                .map(file -> new ContentResponse(
+                        file.getId(),
+                        file.getTitle(),
+                        s3Service.generatePresignedUrl(file.getFileUrl())
+                ))
+                .toList();
     }
 }
