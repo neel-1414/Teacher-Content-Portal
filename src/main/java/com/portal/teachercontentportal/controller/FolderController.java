@@ -9,6 +9,7 @@ import com.portal.teachercontentportal.repository.FolderRepository;
 import com.portal.teachercontentportal.repository.UserRepository;
 import com.portal.teachercontentportal.service.ContentService;
 
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.security.Principal;
@@ -86,4 +87,15 @@ public class FolderController {
         folderRepository.delete(folder);
         return "folder deleted successfully";
     }
+
+
+   @PutMapping("/toggle/{folderId}")
+   public String put(@PathVariable Long folderId, Principal principal) {
+        User teacher = userRepository.findByUserId(principal.getName()).orElseThrow(()->new RuntimeException("Cannot find user"));
+        Folder folder = folderRepository.findById(folderId).orElseThrow(()->new RuntimeException("Cannot find the folder"));
+
+        folder.setEnabled(!folder.isEnabled());
+        folderRepository.save(folder);
+        return  folder.isEnabled()?"Enabled":"Disabled";
+   }
 }
