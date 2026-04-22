@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folder Files</title>
+
     <link rel="stylesheet" href="../css/folderfile.css">
 </head>
 
@@ -26,7 +27,9 @@
             <p>Manage files in this folder</p>
         </div>
 
-        <button onclick="openUploadModal()">Add File</button>
+        <button type="button" onclick="openUploadModal()">
+            Add File
+        </button>
     </div>
 
     <div id="fileList"></div>
@@ -35,19 +38,46 @@
 
 <!-- Upload Modal -->
 <div class="modal" id="uploadModal">
+
     <div class="modal-content">
+
         <h3>Upload File</h3>
 
-        <input type="text" id="fileName" placeholder="Enter file name">
-        <input type="file" id="fileInput">
+        <input
+                type="text"
+                id="fileName"
+                placeholder="Enter file name"
+        >
+
+        <input
+                type="file"
+                id="fileInput"
+        >
 
         <div class="modal-actions">
-            <button onclick="uploadFile()">Upload</button>
-            <button class="secondary-btn" onclick="closeUploadModal()">Cancel</button>
+
+            <button
+                    type="button"
+                    onclick="uploadFile()"
+            >
+                Upload
+            </button>
+
+            <button
+                    type="button"
+                    class="secondary-btn"
+                    onclick="closeUploadModal()"
+            >
+                Cancel
+            </button>
+
         </div>
+
     </div>
+
 </div>
 
-<script src="../js/folderfiles.js"></script>
+<script src="../js/folderfile.js"></script>
+
 </body>
 </html>

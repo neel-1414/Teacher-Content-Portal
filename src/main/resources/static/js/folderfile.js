@@ -1,6 +1,7 @@
 let folderId = null;
 
-/* ---------------- Init ---------------- */
+document.addEventListener("DOMContentLoaded", init);
+
 function init() {
 
     const token = localStorage.getItem("token");
@@ -13,6 +14,8 @@ function init() {
     const params = new URLSearchParams(window.location.search);
     folderId = params.get("id");
 
+    console.log("Folder ID:", folderId);
+
     if (!folderId) {
         window.location.href = "../pages/teacherdashboard.html";
         return;
@@ -20,8 +23,6 @@ function init() {
 
     loadFiles();
 }
-
-init();
 
 /* ---------------- Back ---------------- */
 function goBack() {
@@ -44,7 +45,6 @@ async function loadFiles() {
     }
 
     const files = await res.json();
-
     renderFiles(files);
 }
 
@@ -93,8 +93,13 @@ async function uploadFile() {
     const title = document.getElementById("fileName").value.trim();
     const file = document.getElementById("fileInput").files[0];
 
-    if (!title || !file) {
-        alert("Enter file name and choose file");
+    if (!title) {
+        alert("Enter file name");
+        return;
+    }
+
+    if (!file) {
+        alert("Choose file");
         return;
     }
 
@@ -119,6 +124,7 @@ async function uploadFile() {
         document.getElementById("fileInput").value = "";
 
         alert("Upload successful");
+
         loadFiles();
 
     } else {
@@ -146,7 +152,7 @@ async function deleteFile(id) {
     }
 }
 
-/* ---------------- Close Modal Outside ---------------- */
+/* ---------------- Close Modal ---------------- */
 window.onclick = function(e) {
 
     const modal = document.getElementById("uploadModal");
