@@ -148,9 +148,13 @@ async function deleteFolderUI(folderId)
     }
   });
 
-  if(res.status===401 || res.status===403)
-  {
-    logout();
+  if (res.status === 401) {
+    alert("Session expired or not logged in");
+    return;
+  }
+
+  if (res.status === 403) {
+    alert("You are not allowed to delete this folder");
     return;
   }
 
