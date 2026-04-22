@@ -177,3 +177,15 @@ async function toggleFolder(id){
   alert(await res.text());
   loadFolders();
 }
+
+async function toggleFolder(id){
+  const res = await fetch('/folders/toggle/' + id,{
+    method:'PUT',
+    headers:{
+      Authorization:'Bearer ' + localStorage.getItem("token")
+    }
+  });
+
+  alert(await res.text());
+  loadFolders();
+}
