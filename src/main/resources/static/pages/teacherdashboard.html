@@ -12,7 +12,7 @@
 <header>
     <div class="header-left">
         <h2>Teacher Dashboard</h2>
-        <p>Manage folders and upload files inside folders</p>
+        <p>Manage folders, upload files, and control visibility</p>
     </div>
 
     <button class="logout" onclick="logout()">Logout</button>
@@ -20,15 +20,17 @@
 
 <div class="container">
 
+    <!-- Top Bar -->
     <div class="top-bar">
         <div>
             <h3>Folders</h3>
-            <p>Create folders and add files inside folders</p>
+            <p>Create folders and publish them for students</p>
         </div>
 
         <button onclick="openFolderModal()">Add Folder</button>
     </div>
 
+    <!-- Dynamic Folder List -->
     <div id="folderList"></div>
 
 </div>
@@ -60,6 +62,19 @@
         <div class="modal-actions">
             <button onclick="uploadFile()">Upload</button>
             <button class="secondary-btn" onclick="closeUploadModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Folder Modal -->
+<div class="modal" id="deleteModal">
+    <div class="modal-content small">
+        <h3>Delete Folder?</h3>
+        <p>This action cannot be undone.</p>
+
+        <div class="modal-actions">
+            <button class="danger-btn" onclick="confirmDelete()">Delete</button>
+            <button class="secondary-btn" onclick="closeDeleteModal()">Cancel</button>
         </div>
     </div>
 </div>

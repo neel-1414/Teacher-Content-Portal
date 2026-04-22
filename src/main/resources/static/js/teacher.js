@@ -1,8 +1,11 @@
 let folders = [];
+let selectedFolderId = null;
+let deleteFolderId = null;
+
+document.addEventListener("DOMContentLoaded", init);
 
 /* ---------------- Init ---------------- */
 function init() {
-
   const token = localStorage.getItem("token");
 
   if (!token) {
@@ -13,8 +16,6 @@ function init() {
   loadFolders();
 }
 
-init();
-
 /* ---------------- Logout ---------------- */
 function logout() {
   localStorage.removeItem("token");
@@ -23,73 +24,112 @@ function logout() {
 
 /* ---------------- Load Folders ---------------- */
 async function loadFolders() {
+  try {
+    const res = await fetch("/folders", {
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token")
+      }
+    });
 
-  const res = await fetch("/folders", {
-    headers: {
-      Authorization: "Bearer " + localStorage.getItem("token")
+    if (res.status === 401 || res.status === 403) {
+      logout();
+      return;
     }
-  });
 
-  if (res.status === 401 || res.status === 403) {
-    logout();
-    return;
+    folders = await res.json();
+    renderFolders();
+
+  } catch (error) {
+    console.error(error);
   }
-
-  folders = await res.json();
-  renderFolders();
 }
 
-/* ---------------- Render Folders ---------------- */
+/* ---------------- Render ---------------- */
 function renderFolders() {
-
   const list = document.getElementById("folderList");
 
   if (!folders || folders.length === 0) {
     list.innerHTML = `
-            <div class="empty-state">
-                <h3>No folders created yet</h3>
-                <p>Create your first folder using the button above.</p>
-            </div>
-        `;
+      <div class="empty-state">
+        <h3>No folders found</h3>
+        <p>Create your first folder to start uploading files.</p>
+      </div>
+    `;
     return;
   }
 
   list.innerHTML = folders.map(folder => `
-        <div class="file-row">
-            <div>
-                <strong>${folder.name}</strong><br>
-                <small>${folder.year} Year - ${folder.branch}</small>
-            </div>
+    <div class="folder-card">
 
-            <div style="display:flex; gap:10px; justify-content:flex-end;">
-        <button onclick="openFolder(${folder.id})">Open</button>
-        <button class="delete" onclick="deleteFolderUI(${folder.id})">Delete</button>
+      <div class="folder-info">
+        <h4>${folder.name}</h4>
+        <p>${folder.year} • ${folder.branch}</p>
       </div>
+
+      <div class="folder-actions">
+
+        <div class="toggle-box">
+          <label class="switch">
+            <input
+              type="checkbox"
+              ${folder.enabled ? "checked" : ""}
+              onchange="toggleFolder(${folder.id})"
+            >
+            <span class="slider"></span>
+          </label>
+
+          <span class="status-text">
+            ${folder.enabled ? "Visible" : "Hidden"}
+          </span>
+        </div>
+
+        <button onclick="openUploadModal(${folder.id})">
+          Upload
+        </button>
+
+        <button onclick="openFiles(${folder.id})">
+          Files
+        </button>
+
+        <button class="danger-btn"
+          onclick="openDeleteModal(${folder.id})">
+          Delete
+        </button>
+
+      </div>
+
     </div>
-
-    `).join("");
+  `).join("");
 }
 
-/* ---------------- Open Folder ---------------- */
-function openFolder(folderId) {
-  window.location.href = "../pages/folderfiles.html?id=" + folderId;
+/* ---------------- Open Files ---------------- */
+function openFiles(id) {
+  window.location.href =
+      "../pages/folderfiles.html?id=" + id;
 }
 
-/* ---------------- Folder Modal ---------------- */
+/* ---------------- Create Folder ---------------- */
 function openFolderModal() {
   document.getElementById("folderModal").style.display = "flex";
 }
 
 function closeFolderModal() {
   document.getElementById("folderModal").style.display = "none";
+
+  document.getElementById("folderName").value = "";
+  document.getElementById("year").value = "";
+  document.getElementById("branch").value = "";
 }
 
-/* ---------------- Create Folder ---------------- */
 async function createFolder() {
+  const name =
+      document.getElementById("folderName").value.trim();
 
-  const name = document.getElementById("folderName").value.trim();
-  const year = document.getElementById("year").value.trim();
-  const branch = document.getElementById("branch").value.trim();
+  const year =
+      document.getElementById("year").value.trim();
+
+  const branch =
+      document.getElementById("branch").value.trim();
 
   if (!name || !year || !branch) {
     alert("Fill all fields");
@@ -103,93 +143,123 @@ async function createFolder() {
       Authorization: "Bearer " + localStorage.getItem("token")
     },
     body: JSON.stringify({
-      name: name,
-      year: year,
-      branch: branch,
-      enabled: true
+      name,
+      year,
+      branch
     })
   });
 
   if (res.ok) {
-
     closeFolderModal();
-
-    document.getElementById("folderName").value = "";
-    document.getElementById("year").value = "";
-    document.getElementById("branch").value = "";
-
     loadFolders();
-
   } else {
-    alert("Folder creation failed");
+    alert("Failed to create folder");
   }
 }
 
-/* ---------------- Close Modal Outside ---------------- */
-window.onclick = function (e) {
-
-  const modal = document.getElementById("folderModal");
-
-  if (e.target === modal) {
-    closeFolderModal();
-  }
-};
-
-
-async function deleteFolderUI(folderId)
-{
-  const confirmDelete=confirm("Are you sure you want to delete this folder?\nAll files inside it will also be deleted.");
-  if(!confirmDelete) return;
-
-  const res=await fetch(`/folders/${folderId}`, {
-    method:"DELETE",
-    headers:{
-      Authorization: "Bearer "+localStorage.getItem("token")
+/* ---------------- Toggle Folder ---------------- */
+async function toggleFolder(id) {
+  await fetch("/folders/toggle/" + id, {
+    method: "PUT",
+    headers: {
+      Authorization: "Bearer " + localStorage.getItem("token")
     }
   });
 
-  if (res.status === 401) {
-    alert("Session expired or not logged in");
+  loadFolders();
+}
+
+/* ---------------- Upload ---------------- */
+function openUploadModal(folderId) {
+  selectedFolderId = folderId;
+  document.getElementById("uploadModal").style.display = "flex";
+}
+
+function closeUploadModal() {
+  document.getElementById("uploadModal").style.display = "none";
+
+  document.getElementById("fileName").value = "";
+  document.getElementById("fileInput").value = "";
+}
+
+async function uploadFile() {
+  const title =
+      document.getElementById("fileName").value.trim();
+
+  const file =
+      document.getElementById("fileInput").files[0];
+
+  if (!title) {
+    alert("Enter file name");
     return;
   }
 
-  if (res.status === 403) {
-    alert("You are not allowed to delete this folder");
+  if (!file) {
+    alert("Choose file");
     return;
   }
 
-  if (res.ok)
-  {
-    alert("Folder deleted successfully");
+  const formData = new FormData();
+  formData.append("title", title);
+  formData.append("file", file);
+
+  const res = await fetch(
+      "/content/upload/" + selectedFolderId,
+      {
+        method: "POST",
+        headers: {
+          Authorization:
+              "Bearer " + localStorage.getItem("token")
+        },
+        body: formData
+      }
+  );
+
+  if (res.ok) {
+    closeUploadModal();
+    alert("Upload successful");
+  } else {
+    alert("Upload failed");
+  }
+}
+
+/* ---------------- Delete ---------------- */
+function openDeleteModal(id) {
+  deleteFolderId = id;
+  document.getElementById("deleteModal").style.display = "flex";
+}
+
+function closeDeleteModal() {
+  deleteFolderId = null;
+  document.getElementById("deleteModal").style.display = "none";
+}
+
+async function confirmDelete() {
+  if (!deleteFolderId) return;
+
+  const res = await fetch("/folders/" + deleteFolderId, {
+    method: "DELETE",
+    headers: {
+      Authorization: "Bearer " + localStorage.getItem("token")
+    }
+  });
+
+  if (res.ok) {
+    closeDeleteModal();
     loadFolders();
-  }
-  else
-  {
-    const msg = await res.text();
-    alert(msg || "Folder deletion failed");
+  } else {
+    alert("Delete failed");
   }
 }
 
-async function toggleFolder(id){
-  const res = await fetch('/folders/toggle/' + id,{
-    method:'PUT',
-    headers:{
-      Authorization:'Bearer ' + localStorage.getItem("token")
-    }
-  });
+/* ---------------- Outside Click ---------------- */
+window.onclick = function (e) {
+  ["folderModal", "uploadModal", "deleteModal"]
+      .forEach(id => {
+        const modal = document.getElementById(id);
 
-  alert(await res.text());
-  loadFolders();
-}
-
-async function toggleFolder(id){
-  const res = await fetch('/folders/toggle/' + id,{
-    method:'PUT',
-    headers:{
-      Authorization:'Bearer ' + localStorage.getItem("token")
-    }
-  });
-
-  alert(await res.text());
-  loadFolders();
-}
+        if (e.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+};
