@@ -1880,3 +1880,9 @@ org.slf4j.spi.SLF4JServiceProvider: org.slf4j.jul.JULServiceProvider not a subty
 2026-04-22 11:59:02.464 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@56ab6dd7
 2026-04-22 11:59:02.464 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@41885975
 2026-04-22 11:59:02.464 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1bbb554f
+2026-04-22 12:00:02.468 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@18790c92
+2026-04-22 12:00:02.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@53bb3af2
+2026-04-22 12:00:02.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@c75e834
+2026-04-22 12:00:02.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6d1f24c8
+2026-04-22 12:00:02.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3d52b865
+2026-04-22 12:00:02.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@37346997
