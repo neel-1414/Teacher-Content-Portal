@@ -12,7 +12,7 @@
 <header>
     <div class="header-left">
         <h2>Teacher Dashboard</h2>
-        <p>Manage folders and upload files inside folders</p>
+        <p>Manage folders, upload files, and control student visibility</p>
     </div>
 
     <button class="logout" onclick="logout()">Logout</button>
@@ -23,13 +23,43 @@
     <div class="top-bar">
         <div>
             <h3>Folders</h3>
-            <p>Create folders and add files inside folders</p>
+            <p>Create folders and publish them for students</p>
         </div>
 
         <button onclick="openFolderModal()">Add Folder</button>
     </div>
 
-    <div id="folderList"></div>
+    <div id="folderList">
+
+        <!-- Example Folder Card -->
+        <div class="folder-card">
+
+            <div class="folder-info">
+                <h4>Java Notes</h4>
+                <p>Third Year • IT</p>
+            </div>
+
+            <div class="folder-actions">
+
+                <!-- Toggle -->
+                <div class="toggle-box">
+                    <label class="switch">
+                        <input type="checkbox"
+                               checked
+                               onchange="toggleFolder(1)">
+                        <span class="slider"></span>
+                    </label>
+                    <span class="status-text">Visible</span>
+                </div>
+
+                <button onclick="openUploadModal(1)">Upload</button>
+                <button class="danger-btn" onclick="openDeleteModal(1)">Delete</button>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
@@ -60,6 +90,19 @@
         <div class="modal-actions">
             <button onclick="uploadFile()">Upload</button>
             <button class="secondary-btn" onclick="closeUploadModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<!-- Delete Confirmation Modal -->
+<div class="modal" id="deleteModal">
+    <div class="modal-content small">
+        <h3>Delete Folder?</h3>
+        <p>This action cannot be undone.</p>
+
+        <div class="modal-actions">
+            <button class="danger-btn" onclick="confirmDelete()">Delete</button>
+            <button class="secondary-btn" onclick="closeDeleteModal()">Cancel</button>
         </div>
     </div>
 </div>

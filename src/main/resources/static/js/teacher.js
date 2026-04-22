@@ -1,6 +1,5 @@
 let folders = [];
 
-/* ---------------- Init ---------------- */
 function init() {
 
   const token = localStorage.getItem("token");
@@ -15,13 +14,11 @@ function init() {
 
 init();
 
-/* ---------------- Logout ---------------- */
 function logout() {
   localStorage.removeItem("token");
   window.location.href = "../pages/login.html";
 }
 
-/* ---------------- Load Folders ---------------- */
 async function loadFolders() {
 
   const res = await fetch("/folders", {
@@ -39,7 +36,6 @@ async function loadFolders() {
   renderFolders();
 }
 
-/* ---------------- Render Folders ---------------- */
 function renderFolders() {
 
   const list = document.getElementById("folderList");
@@ -70,12 +66,10 @@ function renderFolders() {
     `).join("");
 }
 
-/* ---------------- Open Folder ---------------- */
 function openFolder(folderId) {
   window.location.href = "../pages/folderfiles.html?id=" + folderId;
 }
 
-/* ---------------- Folder Modal ---------------- */
 function openFolderModal() {
   document.getElementById("folderModal").style.display = "flex";
 }
@@ -84,7 +78,6 @@ function closeFolderModal() {
   document.getElementById("folderModal").style.display = "none";
 }
 
-/* ---------------- Create Folder ---------------- */
 async function createFolder() {
 
   const name = document.getElementById("folderName").value.trim();
@@ -125,7 +118,6 @@ async function createFolder() {
   }
 }
 
-/* ---------------- Close Modal Outside ---------------- */
 window.onclick = function (e) {
 
   const modal = document.getElementById("folderModal");
