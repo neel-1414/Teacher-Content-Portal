@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder Files</title>
+    <link rel="stylesheet" href="../css/folderfile.css">
+</head>
+
+<body>
+
+<header>
+    <div class="header-left">
+        <h2>Folder Files</h2>
+        <p>View uploaded files inside folder</p>
+    </div>
+
+    <button class="logout" onclick="goBack()">Back</button>
+</header>
+
+<div class="container">
+
+    <div class="top-bar">
+        <div>
+            <h3 id="folderTitle">Files</h3>
+            <p>Manage files in this folder</p>
+        </div>
+
+        <button onclick="openUploadModal()">Add File</button>
+    </div>
+
+    <div id="fileList"></div>
+
+</div>
+
+<!-- Upload Modal -->
+<div class="modal" id="uploadModal">
+    <div class="modal-content">
+        <h3>Upload File</h3>
+
+        <input type="text" id="fileName" placeholder="Enter file name">
+        <input type="file" id="fileInput">
+
+        <div class="modal-actions">
+            <button onclick="uploadFile()">Upload</button>
+            <button class="secondary-btn" onclick="closeUploadModal()">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<script src="../js/folderfiles.js"></script>
+</body>
+</html>

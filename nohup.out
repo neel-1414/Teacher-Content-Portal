@@ -1146,3 +1146,325 @@ java.nio.file.NoSuchFileException: /home/neel/.cache/JetBrains/IntelliJIdea2026.
 2026-04-22 00:59:22.621 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@434a8377
 2026-04-22 00:59:22.621 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@54fe6f1b
 2026-04-22 00:59:22.621 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1d227691
+2026-04-22 01:00:22.625 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2fb2b2cc
+2026-04-22 01:00:22.625 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@29e46a30
+2026-04-22 01:00:22.626 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@30fedfdc
+2026-04-22 01:00:22.626 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4f598d6e
+2026-04-22 01:00:22.626 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@75c7729b
+2026-04-22 01:00:22.626 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7f7833f9
+2026-04-22 01:00:52.682 [TRC] [daemon-client-ws] /system/events/handleUri/8129 incoming exception java.util.concurrent.CancellationException: Job was cancelled
+2026-04-22 01:00:52.683 [TRC] [daemon-client-ws] /system/events/handleUri/8129 request failed kotlinx.coroutines.JobCancellationException: Job was cancelled
+2026-04-22 08:34:57,148 [    953]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.project.impl.ProjectStoreFactory: com.intellij.configurationScript.providers.ConfigurationScriptProjectStoreFactory attempts to override com.intellij.configurationStore.PlatformLangProjectStoreFactory, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-04-22 08:34:57,162 [    967]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.modcommand.ModCommandExecutor: com.jetbrains.rdserver.ui.intentions.RemoteModCommandExecutor attempts to override com.intellij.lang.impl.modcommand.ModCommandExecutorImpl, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-04-22 08:34:57,645 [   1450]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Default.Dark is deprecated for new UI themes, use Checkbox.Background.Default instead
+2026-04-22 08:34:57,646 [   1451]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Default.Dark is deprecated for new UI themes, use Checkbox.Border.Default instead
+2026-04-22 08:34:57,646 [   1451]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Selected.Dark is deprecated for new UI themes, use Checkbox.Border.Selected instead
+2026-04-22 08:34:57,646 [   1451]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Selected.Dark is deprecated for new UI themes, use Checkbox.Foreground.Selected instead
+2026-04-22 08:34:57,646 [   1451]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Focus.Wide.Dark is deprecated for new UI themes, use Checkbox.Focus.Wide instead
+2026-04-22 08:34:57,646 [   1451]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Default.Dark is not supported and therefore ignored
+2026-04-22 08:34:57,646 [   1451]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Selected.Dark is not supported and therefore ignored
+2026-04-22 08:34:57,646 [   1451]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Disabled.Dark is deprecated for new UI themes, use Checkbox.Background.Disabled instead
+2026-04-22 08:34:57,647 [   1452]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Selected.Dark is deprecated for new UI themes, use Checkbox.Background.Selected instead
+2026-04-22 08:34:57,647 [   1452]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Disabled.Dark is deprecated for new UI themes, use Checkbox.Border.Disabled instead
+2026-04-22 08:34:57,647 [   1452]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Disabled.Dark is deprecated for new UI themes, use Checkbox.Foreground.Disabled instead
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+SLF4J(E): A service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: org.slf4j.jul.JULServiceProvider not a subtype
+2026-04-22 08:34:57,778 [   1583]   WARN - #c.i.s.c.i.StationSocketConnectionLoop - Discovery connection failed with NoSuchFileException (/run/user/1000/jb.station.sock)
+2026-04-22 08:34:59.099 [DBG] [oshi.util.FileUtil] No {} file found from ClassLoader {}:[Ljava.lang.Object;@448e9a3e
+2026-04-22 08:34:59.113 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5ba1274f
+2026-04-22 08:34:59.114 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@c2b9d
+2026-04-22 08:34:59.119 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@dc0f99f
+2026-04-22 08:34:59.125 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6bf7c853
+2026-04-22 08:34:59.125 [DBG] [oshi.software.os.linux.LinuxOperatingSystem] os-release: {}:[Ljava.lang.Object;@6a5d5399
+2026-04-22 08:34:59.125 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3d499d5d
+2026-04-22 08:34:59.131 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@59422094
+2026-04-22 08:34:59.131 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@363f0829
+2026-04-22 08:34:59.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@c9bfa09
+2026-04-22 08:34:59.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2640fffd
+2026-04-22 08:34:59.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6e4e3d21
+2026-04-22 08:34:59.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@20fe0e81
+2026-04-22 08:34:59.133 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@52f845a3
+2026-04-22 08:34:59.133 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4d40dde8
+2026-04-22 08:35:02,948 [   6753]   WARN - #c.i.s.c.i.StationSocketConnectionLoop - RecentProjects connection failed with NoSuchFileException (/run/user/1000/jb.station.sock)
+2026-04-22 08:35:03,057 [   6862]   WARN - #c.i.v.g.r.GitRepositoriesHolder - State of repository RepositoryId(projectId=ProjectId#ck8n4alfoe0ffak4lj3u, rootPath=/home/neel/PROJECTS/Teacher_Content_Portal/Teacher_Content_Portal) is not synchronized. Known repositories are: 
+2026-04-22 08:35:59.140 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@24a3c4d
+2026-04-22 08:35:59.140 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@25a5cba3
+2026-04-22 08:35:59.140 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4ce7160
+2026-04-22 08:35:59.141 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@80a95bc
+2026-04-22 08:35:59.141 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5b7178a4
+2026-04-22 08:35:59.141 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@508258ba
+2026-04-22 08:36:59.147 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4c3a5156
+2026-04-22 08:36:59.147 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@135c342a
+2026-04-22 08:36:59.148 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3342bb69
+2026-04-22 08:36:59.148 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@207422e7
+2026-04-22 08:36:59.148 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3e5a775e
+2026-04-22 08:36:59.148 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4cd5f9db
+2026-04-22 08:37:59.161 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7aa4053c
+2026-04-22 08:37:59.162 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@628ee1f0
+2026-04-22 08:37:59.163 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6e6333fc
+2026-04-22 08:37:59.163 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@f41c62f
+2026-04-22 08:37:59.164 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5516af1e
+2026-04-22 08:37:59.164 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4002552d
+2026-04-22 08:38:59.170 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1a40bc6b
+2026-04-22 08:38:59.171 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@106ea440
+2026-04-22 08:38:59.171 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7326735b
+2026-04-22 08:38:59.171 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@28f9178d
+2026-04-22 08:38:59.171 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@37c5551d
+2026-04-22 08:38:59.171 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@526cab01
+2026-04-22 08:39:59.176 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@29862580
+2026-04-22 08:39:59.176 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@223523b1
+2026-04-22 08:39:59.176 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1552ed19
+2026-04-22 08:39:59.176 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@430acb34
+2026-04-22 08:39:59.177 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5b385cf0
+2026-04-22 08:39:59.177 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@501bd48d
+2026-04-22 08:40:39,953 [ 343758]   WARN - org.apache.velocity.deprecation - configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2026-04-22 08:40:39,955 [ 343760]   WARN - org.apache.velocity.deprecation - configuration key 'includes.resource.loader.class' has been deprecated in favor of 'resource.loader.includes.class'
+2026-04-22 08:40:40,002 [ 343807]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,010 [ 343815]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,011 [ 343816]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,136 [ 343941]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,137 [ 343942]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,137 [ 343942]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,166 [ 343971]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,166 [ 343971]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,166 [ 343971]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,291 [ 344096]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,292 [ 344097]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,292 [ 344097]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,305 [ 344110]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,306 [ 344111]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,306 [ 344111]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,418 [ 344223]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,419 [ 344224]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,419 [ 344224]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,429 [ 344234]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,429 [ 344234]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,429 [ 344234]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,704 [ 344509]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,704 [ 344509]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,704 [ 344509]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,714 [ 344519]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,714 [ 344519]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,714 [ 344519]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,795 [ 344600]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,796 [ 344601]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,796 [ 344601]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,806 [ 344611]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,806 [ 344611]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,806 [ 344611]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,866 [ 344671]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,866 [ 344671]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,867 [ 344672]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,875 [ 344680]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,875 [ 344680]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:40,875 [ 344680]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:41,997 [ 345802]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:41,997 [ 345802]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:41,997 [ 345802]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,006 [ 345811]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,007 [ 345812]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,007 [ 345812]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,564 [ 346369]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,564 [ 346369]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,564 [ 346369]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,578 [ 346383]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,578 [ 346383]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,578 [ 346383]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,715 [ 346520]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,716 [ 346521]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,716 [ 346521]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,730 [ 346535]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,730 [ 346535]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,731 [ 346536]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,848 [ 346653]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,848 [ 346653]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,848 [ 346653]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,861 [ 346666]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,861 [ 346666]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:42,862 [ 346667]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:43,461 [ 347266]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:43,462 [ 347267]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:43,462 [ 347267]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:43,473 [ 347278]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:43,473 [ 347278]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:43,474 [ 347279]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,335 [ 348140]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,335 [ 348140]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,335 [ 348140]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,346 [ 348151]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,346 [ 348151]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,346 [ 348151]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,432 [ 348237]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,432 [ 348237]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,436 [ 348241]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,447 [ 348252]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,447 [ 348252]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,447 [ 348252]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,533 [ 348338]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,533 [ 348338]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,533 [ 348338]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,545 [ 348350]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,545 [ 348350]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,546 [ 348351]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,593 [ 348398]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,593 [ 348398]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,593 [ 348398]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,601 [ 348406]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,601 [ 348406]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,601 [ 348406]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,939 [ 348744]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,939 [ 348744]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,939 [ 348744]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,948 [ 348753]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,948 [ 348753]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:44,948 [ 348753]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,063 [ 348868]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,063 [ 348868]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,063 [ 348868]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,084 [ 348889]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,084 [ 348889]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,084 [ 348889]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,124 [ 348929]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,124 [ 348929]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,124 [ 348929]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,129 [ 348934]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,129 [ 348934]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,129 [ 348934]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,205 [ 349010]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,205 [ 349010]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,205 [ 349010]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,215 [ 349020]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,216 [ 349021]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,216 [ 349021]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,358 [ 349163]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,358 [ 349163]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,358 [ 349163]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,367 [ 349172]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,367 [ 349172]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,367 [ 349172]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,502 [ 349307]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,502 [ 349307]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,502 [ 349307]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,510 [ 349315]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,510 [ 349315]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,510 [ 349315]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,643 [ 349448]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,643 [ 349448]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,643 [ 349448]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,651 [ 349456]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,651 [ 349456]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,652 [ 349457]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,694 [ 349499]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,694 [ 349499]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,694 [ 349499]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,703 [ 349508]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,703 [ 349508]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,704 [ 349509]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,792 [ 349597]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,792 [ 349597]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,792 [ 349597]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,800 [ 349605]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,800 [ 349605]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,801 [ 349606]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,936 [ 349741]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,936 [ 349741]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,936 [ 349741]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,944 [ 349749]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,944 [ 349749]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:45,944 [ 349749]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:46,816 [ 350621]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:46,816 [ 350621]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:46,817 [ 350622]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:46,827 [ 350632]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:46,827 [ 350632]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:46,827 [ 350632]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,002 [ 350807]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,002 [ 350807]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,003 [ 350808]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,012 [ 350817]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,013 [ 350818]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,013 [ 350818]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,059 [ 350864]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,059 [ 350864]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,059 [ 350864]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,066 [ 350871]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,066 [ 350871]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,067 [ 350872]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,615 [ 351420]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,615 [ 351420]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,616 [ 351421]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,625 [ 351430]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,626 [ 351431]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:47,626 [ 351431]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-22 08:40:59.181 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4ec4bac5
+2026-04-22 08:40:59.182 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6a23ff7d
+2026-04-22 08:40:59.182 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7317c2c7
+2026-04-22 08:40:59.182 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@71473441
+2026-04-22 08:40:59.182 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1a3eba3e
+2026-04-22 08:40:59.182 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6f937613
+2026-04-22 08:41:59.189 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6005ff12
+2026-04-22 08:41:59.189 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@239c5049
+2026-04-22 08:41:59.189 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2d0b0cf1
+2026-04-22 08:41:59.190 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6f2ec7d5
+2026-04-22 08:41:59.190 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@201c484d
+2026-04-22 08:41:59.190 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@61c34a1f
+2026-04-22 08:42:59.197 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@704a7036
+2026-04-22 08:42:59.197 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@295de50f
+2026-04-22 08:42:59.197 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@399ad823
+2026-04-22 08:42:59.197 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@24c4e8cc
+2026-04-22 08:42:59.198 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@72ce7a2
+2026-04-22 08:42:59.198 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@411f0fd5
+2026-04-22 08:43:59.201 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2e8218c
+2026-04-22 08:43:59.202 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@54d80d4d
+2026-04-22 08:43:59.202 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5518ef4f
+2026-04-22 08:43:59.202 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1555e25d
+2026-04-22 08:43:59.202 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5672553a
+2026-04-22 08:43:59.202 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@425488dc
+2026-04-22 08:44:59.207 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5dbd64f0
+2026-04-22 08:44:59.207 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@64ba3abb
+2026-04-22 08:44:59.207 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@729cce6
+2026-04-22 08:44:59.208 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5af77606
+2026-04-22 08:44:59.208 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6c5b134c
+2026-04-22 08:44:59.208 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5981839e
+2026-04-22 08:45:59.214 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4936efeb
+2026-04-22 08:45:59.214 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5fc7c196
+2026-04-22 08:45:59.214 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4b530711
+2026-04-22 08:45:59.214 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@42aea80b
+2026-04-22 08:45:59.214 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3c994e02
+2026-04-22 08:45:59.214 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5db3e376
+2026-04-22 08:46:34,535 [ 698340]   WARN - org.apache.velocity.deprecation - configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2026-04-22 08:46:34,535 [ 698340]   WARN - org.apache.velocity.deprecation - configuration key 'includes.resource.loader.instance' has been deprecated in favor of 'resource.loader.includes.instance'
+2026-04-22 08:46:59.220 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7166f96b
+2026-04-22 08:46:59.220 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3f4e05de
+2026-04-22 08:46:59.221 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@53333b62
+2026-04-22 08:46:59.221 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@26d9a9d2
+2026-04-22 08:46:59.221 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@60b2a1c3
+2026-04-22 08:46:59.221 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2f9d28fe
+2026-04-22 08:47:59.227 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5dceb2d1
+2026-04-22 08:47:59.228 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2a41ea41
+2026-04-22 08:47:59.228 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@59dd020c
+2026-04-22 08:47:59.228 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@47fb5d92
+2026-04-22 08:47:59.228 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6f8b3786
+2026-04-22 08:47:59.228 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4a3dcbd4
+2026-04-22 08:48:59.232 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@474cb203
+2026-04-22 08:48:59.232 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2a5a88f1
+2026-04-22 08:48:59.232 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@654d0609
+2026-04-22 08:48:59.232 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@676bb4bb
+2026-04-22 08:48:59.232 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4595ceff
+2026-04-22 08:48:59.232 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3b76dbbc
+2026-04-22 08:49:59.236 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@74960fc
+2026-04-22 08:49:59.236 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@15fa7fbc
+2026-04-22 08:49:59.236 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@b197ab6
+2026-04-22 08:49:59.236 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@a861dc1
+2026-04-22 08:49:59.236 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4604d2ed
+2026-04-22 08:49:59.237 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@c5520e
+2026-04-22 08:50:59.241 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5d2f1d87
+2026-04-22 08:50:59.242 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7ddcf781
+2026-04-22 08:50:59.242 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@697b5d16
+2026-04-22 08:50:59.242 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@114ecb37
+2026-04-22 08:50:59.242 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@34283fbc
+2026-04-22 08:50:59.242 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2e52a647
