@@ -12,4 +12,5 @@ public interface ContentRepository extends JpaRepository<Content, Long>{
     List<Content> findAllByOrderByCreatedAtDesc();
     List<Content> findByFolder_Id(Long folderId);
     List<Content> findByFolder(Folder folder);
+    void deleteByFolderId(Long folderId);
 }
