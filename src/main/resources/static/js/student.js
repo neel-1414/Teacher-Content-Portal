@@ -3,7 +3,7 @@ async function loadFolders() {
     const token = localStorage.getItem("token");
 
     if (!token) {
-        location.href = "login.html";
+        location.href = "../pages/login.html";
         return;
     }
 
@@ -34,9 +34,9 @@ async function loadFolders() {
             data.forEach(folder => {
                 html += `
                     <div class="card">
-                        <h3>${folder.folderName}</h3>
-                        <p>📚 ${folder.year} Year</p>
-                        <p>🏫 ${folder.branch}</p>
+                        <h3>${folder.name}</h3>
+                        <p>${folder.year} Year</p>
+                        <p>${folder.branch}</p>
 
                         <button class="openBtn"
                             onclick="loadFiles(${folder.id})">
@@ -60,7 +60,7 @@ async function loadFiles(folderId) {
 
     const token = localStorage.getItem("token");
 
-    const res = await fetch("/student/files/" + folderId, {
+    const res = await fetch("/student/folders/" + folderId, {
         headers: {
             Authorization: "Bearer " + token
         }
@@ -76,7 +76,7 @@ async function loadFiles(folderId) {
         data.forEach(file => {
             html += `
                 <div class="file">
-                    📄 <a href="${file.fileUrl}" target="_blank">
+                    <a href="${file.fileUrl}" target="_blank">
                         ${file.title}
                     </a>
                 </div>
@@ -91,7 +91,7 @@ async function loadFiles(folderId) {
 
 function logout(){
     localStorage.clear();
-    location.href = "login.html";
+    location.href = "../pages/login.html";
 }
 
 loadFolders();
