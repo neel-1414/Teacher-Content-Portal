@@ -1,5 +1,4 @@
 let folders = [];
-let selectedFolderId = null;
 let deleteFolderId = null;
 
 document.addEventListener("DOMContentLoaded", init);
@@ -83,10 +82,6 @@ function renderFolders() {
           </span>
         </div>
 
-        <button onclick="openUploadModal(${folder.id})">
-          Upload
-        </button>
-
         <button onclick="openFiles(${folder.id})">
           Files
         </button>
@@ -169,60 +164,6 @@ async function toggleFolder(id) {
   loadFolders();
 }
 
-/* ---------------- Upload ---------------- */
-function openUploadModal(folderId) {
-  selectedFolderId = folderId;
-  document.getElementById("uploadModal").style.display = "flex";
-}
-
-function closeUploadModal() {
-  document.getElementById("uploadModal").style.display = "none";
-
-  document.getElementById("fileName").value = "";
-  document.getElementById("fileInput").value = "";
-}
-
-async function uploadFile() {
-  const title =
-      document.getElementById("fileName").value.trim();
-
-  const file =
-      document.getElementById("fileInput").files[0];
-
-  if (!title) {
-    alert("Enter file name");
-    return;
-  }
-
-  if (!file) {
-    alert("Choose file");
-    return;
-  }
-
-  const formData = new FormData();
-  formData.append("title", title);
-  formData.append("file", file);
-
-  const res = await fetch(
-      "/content/upload/" + selectedFolderId,
-      {
-        method: "POST",
-        headers: {
-          Authorization:
-              "Bearer " + localStorage.getItem("token")
-        },
-        body: formData
-      }
-  );
-
-  if (res.ok) {
-    closeUploadModal();
-    alert("Upload successful");
-  } else {
-    alert("Upload failed");
-  }
-}
-
 /* ---------------- Delete ---------------- */
 function openDeleteModal(id) {
   deleteFolderId = id;
@@ -254,7 +195,7 @@ async function confirmDelete() {
 
 /* ---------------- Outside Click ---------------- */
 window.onclick = function (e) {
-  ["folderModal", "uploadModal", "deleteModal"]
+  ["folderModal", "deleteModal"]
       .forEach(id => {
         const modal = document.getElementById(id);
 

@@ -1,9 +1,24 @@
-document.getElementById("loginForm").addEventListener("submit", async function(e){
+const form = document.getElementById("loginForm");
+const passwordInput = document.getElementById("password");
+const togglePasswordButton = document.getElementById("togglePassword");
+const loginButton = document.getElementById("loginButton");
+
+togglePasswordButton.addEventListener("click", function () {
+    const isPassword = passwordInput.type === "password";
+    passwordInput.type = isPassword ? "text" : "password";
+    togglePasswordButton.textContent = isPassword ? "Hide" : "Show";
+});
+
+form.addEventListener("submit", async function(e){
      e.preventDefault();
     const userId = document.getElementById("userId").value.trim();
-    const password = document.getElementById("password").value.trim();
+    const password = passwordInput.value.trim();
     const errormessage = document.getElementById("error-message");
     errormessage.textContent = "";
+
+    loginButton.disabled = true;
+    loginButton.textContent = "Signing In...";
+
     try{
         const response = await fetch("/login",{
         method:"POST",
@@ -35,6 +50,9 @@ document.getElementById("loginForm").addEventListener("submit", async function(e
     catch(error)
     {
         errormessage.textContent = error.message;
+    } finally {
+        loginButton.disabled = false;
+        loginButton.textContent = "Sign In";
     }
 
 });

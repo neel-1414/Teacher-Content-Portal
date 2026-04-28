@@ -67,6 +67,13 @@ async function loadFiles(folderId) {
     });
 
     const data = await res.json();
+    const cards = document.querySelectorAll("#folders .card");
+    cards.forEach(card => card.classList.remove("active"));
+
+    const activeButton = document.querySelector(`button.openBtn[onclick="loadFiles(${folderId})"]`);
+    if (activeButton) {
+        activeButton.closest(".card").classList.add("active");
+    }
 
     let html = "";
 
@@ -85,6 +92,7 @@ async function loadFiles(folderId) {
     }
 
     document.getElementById("files").innerHTML = html;
+    document.getElementById("files").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 

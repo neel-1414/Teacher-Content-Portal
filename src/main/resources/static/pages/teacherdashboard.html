@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/teacherdasboard.css">
 </head>
 
 <body>
-
-<header>
-    <div class="header-left">
-        <h2>Teacher Dashboard</h2>
-        <p>Manage folders, upload files, and control visibility</p>
-    </div>
-
-    <button class="logout" onclick="logout()">Logout</button>
-</header>
-
-<div class="container">
-
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div>
-            <h3>Folders</h3>
-            <p>Create folders and publish them for students</p>
+<div class="page">
+    <aside class="side-panel">
+        <div class="brand">
+            <h1>Teacher Workspace</h1>
+            <p>Organize folders, control visibility, and manage academic content flow.</p>
         </div>
+        <button class="logout" onclick="logout()">Logout</button>
+    </aside>
 
-        <button onclick="openFolderModal()">Add Folder</button>
-    </div>
+    <main class="container">
+        <section class="top-bar">
+            <div>
+                <h3>Folder Management</h3>
+                <p>Create and publish folders. Open a folder to manage file uploads.</p>
+            </div>
+            <button onclick="openFolderModal()">Create Folder</button>
+        </section>
 
-    <!-- Dynamic Folder List -->
-    <div id="folderList"></div>
-
+        <section class="content-panel">
+            <div class="panel-title">
+                <h4>All Folders</h4>
+                <span>Use Files to upload inside folder</span>
+            </div>
+            <div id="folderList"></div>
+        </section>
+    </main>
 </div>
 
 <!-- Create Folder Modal -->
@@ -47,21 +49,6 @@
         <div class="modal-actions">
             <button onclick="createFolder()">Create</button>
             <button class="secondary-btn" onclick="closeFolderModal()">Cancel</button>
-        </div>
-    </div>
-</div>
-
-<!-- Upload File Modal -->
-<div class="modal" id="uploadModal">
-    <div class="modal-content">
-        <h3>Upload File</h3>
-
-        <input type="text" id="fileName" placeholder="File Name">
-        <input type="file" id="fileInput">
-
-        <div class="modal-actions">
-            <button onclick="uploadFile()">Upload</button>
-            <button class="secondary-btn" onclick="closeUploadModal()">Cancel</button>
         </div>
     </div>
 </div>
