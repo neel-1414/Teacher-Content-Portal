@@ -20,19 +20,21 @@
 
 body{
     min-height:100vh;
-    background:var(--bg);
+    background:linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
     font-family:"DM Sans", sans-serif;
     color:var(--text);
 }
 
 /* Header */
 header{
-    background:var(--panel);
-    border-bottom:1px solid var(--border);
+    background:linear-gradient(135deg, #111827 0%, #1f2937 100%);
+    color:#fff;
+    border-bottom:none;
     padding:22px 34px;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    box-shadow:0 8px 24px rgba(0,0,0,0.12);
 }
 
 .header-left h2{
@@ -43,14 +45,14 @@ header{
 }
 
 .header-left p{
-    color:var(--muted);
+    color:#cbd5e1;
     font-size:14px;
 }
 
 .logout{
-    background:var(--accent);
+    background:rgba(255,255,255,0.14);
     color:#fff;
-    border:none;
+    border:1px solid rgba(255,255,255,0.2);
     padding:12px 18px;
     border-radius:8px;
     cursor:pointer;
@@ -59,7 +61,8 @@ header{
 }
 
 .logout:hover{
-    background:var(--accent-hover);
+    background:rgba(255,255,255,0.22);
+    transform:translateY(-1px);
 }
 
 /* Container */
@@ -67,6 +70,7 @@ header{
     max-width:1100px;
     margin:auto;
     padding:34px 20px;
+    animation:fadeInUp 0.45s ease;
 }
 
 /* Top Bar */
@@ -79,7 +83,7 @@ header{
     justify-content:space-between;
     align-items:center;
     margin-bottom:24px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    box-shadow:0 10px 25px rgba(15,23,42,0.08);
 }
 
 .top-bar h3{
@@ -101,10 +105,12 @@ header{
     border-radius:8px;
     cursor:pointer;
     font-weight:600;
+    transition:all 0.2s ease;
 }
 
 .top-bar button:hover{
     background:var(--accent-hover);
+    transform:translateY(-1px);
 }
 
 /* File Row */
@@ -118,6 +124,12 @@ header{
     justify-content:space-between;
     align-items:center;
     box-shadow:0 6px 16px rgba(0,0,0,0.04);
+    transition:transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.file-row:hover{
+    transform:translateY(-2px);
+    box-shadow:0 12px 24px rgba(15,23,42,0.10);
 }
 
 .file-row a{
@@ -142,6 +154,12 @@ header{
 
 .file-row button:hover{
     background:var(--danger-hover);
+}
+
+.file-actions{
+    display:flex;
+    gap:10px;
+    align-items:center;
 }
 
 /* Empty State */
@@ -181,6 +199,8 @@ header{
     background:#fff;
     border-radius:22px;
     padding:30px;
+    box-shadow:0 24px 60px rgba(0,0,0,0.20);
+    animation:modalPop 0.22s ease;
 }
 
 .modal-content h3{
@@ -196,6 +216,14 @@ header{
     border-radius:8px;
     margin-bottom:14px;
     font-size:14px;
+    background:#f8fafc;
+}
+
+.modal-content input:focus{
+    border-color:var(--accent);
+    box-shadow:0 0 0 4px rgba(37,99,235,0.12);
+    background:#fff;
+    outline:none;
 }
 
 .modal-actions{
@@ -230,6 +258,28 @@ header{
     background:#d1d5db;
 }
 
+@keyframes fadeInUp{
+    from{
+        opacity:0;
+        transform:translateY(12px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes modalPop{
+    from{
+        opacity:0;
+        transform:scale(0.98);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
 /* Responsive */
 @media(max-width:768px){
 
@@ -249,5 +299,10 @@ header{
         flex-direction:column;
         align-items:flex-start;
         gap:12px;
+    }
+
+    .file-actions{
+        width:100%;
+        justify-content:space-between;
     }
 }

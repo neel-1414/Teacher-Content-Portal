@@ -67,7 +67,7 @@ function renderFiles(files) {
         <div class="file-row">
             <div>${file.title}</div>
 
-            <div style="display:flex; gap:10px;">
+            <div class="file-actions">
                 <a href="${file.fileUrl}" target="_blank">View</a>
 
                 <button onclick="deleteFile(${file.id})">

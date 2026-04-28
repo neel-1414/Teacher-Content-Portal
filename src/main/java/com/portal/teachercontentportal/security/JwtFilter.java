@@ -30,7 +30,8 @@ public class JwtFilter extends OncePerRequestFilter {
         if(path.equals("/login")||
                 path.startsWith("/pages/") ||
                 path.startsWith("/css/") ||
-                path.startsWith("/js/")) {
+                path.startsWith("/js/") ||
+                path.startsWith("/media/")) {
             chain.doFilter(request, response);
             return;
         }

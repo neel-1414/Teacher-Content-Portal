@@ -27,7 +27,7 @@ public class SecurityConfig {
     @Bean
     public WebSecurityCustomizer webSecurityCustomizer()
     {
-        return  (web) -> web.ignoring().requestMatchers("/pages/**", "/css/**", "/js/**");
+        return  (web) -> web.ignoring().requestMatchers("/pages/**", "/css/**", "/js/**", "/media/**");
     }
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws  Exception

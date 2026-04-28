@@ -1,189 +1,189 @@
 /* studentdashboard.css */
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:#eef2f7;
-    min-height:100vh;
-    color:#1e293b;
+body {
+    font-family: "DM Sans", sans-serif;
+    background: linear-gradient(180deg, #f7f9fc 0%, #eef2f7 100%);
+    min-height: 100vh;
+    color: #1e293b;
 }
 
 /* Header */
-header{
-    background:linear-gradient(90deg,#0f172a,#1e3a5f);
-    color:white;
-    padding:22px 28px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+header {
+    background: linear-gradient(90deg, #111827, #1e2d5a);
+    color: white;
+    padding: 22px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.15);
 }
 
-.header-left h2{
-    font-size:24px;
-    font-weight:700;
-    margin-bottom:4px;
+.header-left h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
 }
 
-.header-left p{
-    font-size:14px;
-    color:#cbd5e1;
+.header-left p {
+    font-size: 14px;
+    color: #cbd5e1;
 }
 
-.logout{
-    background:#475569;
-    color:white;
-    border:none;
-    padding:10px 18px;
-    border-radius:12px;
-    cursor:pointer;
-    font-weight:600;
-    transition:0.3s;
+.logout {
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.logout:hover{
-    background:#334155;
+.logout:hover {
+    background: rgba(255, 255, 255, 0.22);
+    transform: translateY(-1px);
 }
 
 /* Main Container */
-.container{
-    max-width:1000px;
-    margin:28px auto;
-    padding:0 20px;
+.container {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 0 20px;
+    animation: fadeInUp 0.45s ease;
 }
 
-/* Top Card */
-.top-box{
-    background:white;
-    border-radius:18px;
-    padding:24px 28px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    box-shadow:0 8px 18px rgba(0,0,0,0.06);
-    margin-bottom:22px;
-}
-
-.top-box h2{
-    font-size:22px;
-    margin-bottom:6px;
-    color:#0f172a;
-}
-
-.top-box p{
-    color:#64748b;
-    font-size:15px;
-}
-
-.uploadBtn{
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:12px 22px;
-    border-radius:12px;
-    cursor:pointer;
-    font-weight:600;
-    transition:0.3s;
-}
-
-.uploadBtn:hover{
-    background:#1d4ed8;
+.section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    margin: 4px 0 16px;
+    color: #0f172a;
 }
 
 /* Folder Grid */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:18px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 18px;
 }
 
 /* Folder Card */
-.card{
-    background:white;
-    border-radius:18px;
-    padding:22px;
-    box-shadow:0 8px 18px rgba(0,0,0,0.05);
-    transition:0.3s;
+.card {
+    background: white;
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    transition: 0.3s;
+    border: 1px solid #e2e8f0;
+    border-top: 3px solid #8b1a1a;
 }
 
-.card:hover{
-    transform:translateY(-4px);
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(15, 23, 42, 0.12);
 }
 
-.card h3{
-    font-size:20px;
-    margin-bottom:10px;
-    color:#0f172a;
+.card.active {
+    border-color: rgba(139, 26, 26, 0.35);
+    box-shadow: 0 12px 26px rgba(139, 26, 26, 0.12);
 }
 
-.card p{
-    color:#64748b;
-    margin:5px 0;
-    font-size:14px;
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0f172a;
 }
 
-.openBtn{
-    margin-top:14px;
-    width:100%;
-    background:#2563eb;
-    color:white;
-    border:none;
-    padding:11px;
-    border-radius:12px;
-    cursor:pointer;
-    font-weight:600;
+.card p {
+    color: #64748b;
+    margin: 5px 0;
+    font-size: 14px;
 }
 
-.openBtn:hover{
-    background:#1d4ed8;
+.openBtn {
+    margin-top: 14px;
+    width: 100%;
+    background: #8b1a1a;
+    color: white;
+    border: none;
+    padding: 11px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.openBtn:hover {
+    background: #6f1414;
+    transform: translateY(-1px);
 }
 
 /* Files */
-.file{
-    background:white;
-    padding:18px 20px;
-    border-radius:16px;
-    margin-bottom:14px;
-    box-shadow:0 6px 16px rgba(0,0,0,0.05);
+.file {
+    background: white;
+    padding: 18px 20px;
+    border-radius: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+    border-left: 3px solid #64748b;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.file a{
-    color:#2563eb;
-    text-decoration:none;
-    font-weight:600;
+.file:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.10);
 }
 
-.file a:hover{
-    text-decoration:underline;
+.file a {
+    color: #64748b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.file a:hover {
+    text-decoration: underline;
 }
 
 /* Empty State */
-.empty{
-    background:#f8fafc;
-    border:2px dashed #cbd5e1;
-    border-radius:18px;
-    padding:55px 20px;
-    text-align:center;
-    color:#64748b;
-    font-size:20px;
-    font-weight:600;
+.empty {
+    background: #f1f5f9;
+    border: 2px dashed #94a3b8;
+    border-radius: 18px;
+    padding: 55px 20px;
+    text-align: center;
+    color: #475569;
+    font-size: 20px;
+    font-weight: 600;
 }
 
-.empty small{
-    display:block;
-    margin-top:10px;
-    font-size:15px;
-    font-weight:400;
+.empty small {
+    display: block;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 /* Divider */
-hr{
-    border:none;
-    height:1px;
-    background:#dbe2ea;
-    margin:28px 0;
-}z
+hr {
+    border: none;
+    height: 1px;
+    background: #dbe2ea;
+    margin: 28px 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
