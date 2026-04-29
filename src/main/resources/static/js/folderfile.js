@@ -24,12 +24,10 @@ function init() {
     loadFiles();
 }
 
-/* ---------------- Back ---------------- */
 function goBack() {
     window.location.href = "../pages/teacherdashboard.html";
 }
 
-/* ---------------- Load Files ---------------- */
 async function loadFiles() {
 
     const res = await fetch("/folders/files/" + folderId, {
@@ -48,7 +46,6 @@ async function loadFiles() {
     renderFiles(files);
 }
 
-/* ---------------- Render Files ---------------- */
 function renderFiles(files) {
 
     const list = document.getElementById("fileList");
@@ -78,7 +75,6 @@ function renderFiles(files) {
     `).join("");
 }
 
-/* ---------------- Upload Modal ---------------- */
 function openUploadModal() {
     document.getElementById("uploadModal").style.display = "flex";
 }
@@ -87,7 +83,6 @@ function closeUploadModal() {
     document.getElementById("uploadModal").style.display = "none";
 }
 
-/* ---------------- Upload File ---------------- */
 async function uploadFile() {
 
     const title = document.getElementById("fileName").value.trim();
@@ -132,7 +127,6 @@ async function uploadFile() {
     }
 }
 
-/* ---------------- Delete File ---------------- */
 async function deleteFile(id) {
 
     const ok = confirm("Delete this file?");
@@ -152,7 +146,6 @@ async function deleteFile(id) {
     }
 }
 
-/* ---------------- Close Modal ---------------- */
 window.onclick = function(e) {
 
     const modal = document.getElementById("uploadModal");

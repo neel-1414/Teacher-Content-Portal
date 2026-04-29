@@ -3,7 +3,6 @@ let deleteFolderId = null;
 
 document.addEventListener("DOMContentLoaded", init);
 
-/* ---------------- Init ---------------- */
 function init() {
   const token = localStorage.getItem("token");
 
@@ -15,13 +14,11 @@ function init() {
   loadFolders();
 }
 
-/* ---------------- Logout ---------------- */
 function logout() {
   localStorage.removeItem("token");
   window.location.href = "../pages/login.html";
 }
 
-/* ---------------- Load Folders ---------------- */
 async function loadFolders() {
   try {
     const res = await fetch("/folders", {
@@ -152,7 +149,6 @@ async function createFolder() {
   }
 }
 
-/* ---------------- Toggle Folder ---------------- */
 async function toggleFolder(id) {
   await fetch("/folders/toggle/" + id, {
     method: "PUT",
@@ -164,7 +160,6 @@ async function toggleFolder(id) {
   loadFolders();
 }
 
-/* ---------------- Delete ---------------- */
 function openDeleteModal(id) {
   deleteFolderId = id;
   document.getElementById("deleteModal").style.display = "flex";
@@ -193,7 +188,6 @@ async function confirmDelete() {
   }
 }
 
-/* ---------------- Outside Click ---------------- */
 window.onclick = function (e) {
   ["folderModal", "deleteModal"]
       .forEach(id => {
