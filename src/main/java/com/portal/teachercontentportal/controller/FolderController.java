@@ -9,6 +9,7 @@ import com.portal.teachercontentportal.repository.FolderRepository;
 import com.portal.teachercontentportal.repository.UserRepository;
 import com.portal.teachercontentportal.service.ContentService;
 
+import jakarta.transaction.Transactional;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 

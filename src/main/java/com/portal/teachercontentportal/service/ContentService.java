@@ -7,6 +7,7 @@ import com.portal.teachercontentportal.repository.FolderRepository;
 import com.portal.teachercontentportal.repository.ContentRepository;
 import com.portal.teachercontentportal.repository.UserRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -57,7 +58,6 @@ public class ContentService {
 
         return contentRepository.findByUploadedBy(user);
     }
-
     public void deleteContent(Long contentId, String userId)
     {
         Content content=contentRepository.findById(contentId)
@@ -69,7 +69,7 @@ public class ContentService {
         contentRepository.delete(content);
     }
 
-
+    @Transactional
     public void deleteContentByFolder(Long folderId)
     {
         contentRepository.deleteByFolder_Id(folderId);

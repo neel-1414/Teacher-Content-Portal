@@ -1886,3 +1886,693 @@ org.slf4j.spi.SLF4JServiceProvider: org.slf4j.jul.JULServiceProvider not a subty
 2026-04-22 12:00:02.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6d1f24c8
 2026-04-22 12:00:02.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3d52b865
 2026-04-22 12:00:02.469 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@37346997
+2026-04-29 16:52:02,580 [    526]   WARN - #c.i.i.p.PluginManager - Problems found loading plugins:
+  Plugin 'Refactor-X' (Refactor-X) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Cron Expressions' (com.intellij.cron) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Apache Velocity' (com.intellij.velocity) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'FTP/SFTP/WebDAV Connectivity' (com.jetbrains.plugins.webDeployment) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'SSH Remote Run' (org.jetbrains.plugins.remote-run) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'In-Editor Performance Hints' (com.intellij.LineProfiler) requires plugin with id=com.intellij.modules.ultimate to be enabled
+  Plugin 'Spring Messaging' (com.intellij.spring.messaging) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Modulith' (com.intellij.spring.modulith) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Cloud' (com.intellij.spring.cloud) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Security' (com.intellij.spring.security) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Integration Patterns' (com.intellij.spring.integration) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: RESTful Web Services (JAX-RS)' (com.jetbrains.restWebServices) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Messaging (JMS)' (com.intellij.javaee.extensions) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Contexts and Dependency Injection (CDI)' (com.intellij.cdi) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Bean Validation' (com.intellij.beanValidation) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'FreeMarker' (com.intellij.freemarker) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'AOP Pointcut Language' (com.intellij.aop) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Remote Development Gateway' (com.jetbrains.gateway) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'JVM Persistence Frameworks' (com.intellij.persistence) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Quarkus' (com.intellij.quarkus) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Micronaut' (com.intellij.micronaut) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Persistence (JPA)' (com.intellij.javaee.jpa) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Data' (com.intellij.spring.data) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Reverse Engineering' (com.intellij.javaee.reverseEngineering) requires plugin with id=com.intellij.javaee.jpa to be enabled
+  Plugin 'Jakarta EE: Data' (com.intellij.javaee.jakarta.data) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Application Servers' (com.intellij.javaee.app.servers.integration) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Tomcat and TomEE' (Tomcat) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'WildFly' (JBoss) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Hibernate' (com.intellij.hibernate) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Time Tracking' (com.intellij.tasks.timeTracking) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Sass' (org.jetbrains.plugins.sass) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Web/Servlets' (com.intellij.javaee.web) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Server Pages (JSP)' (com.intellij.jsp) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'PostCSS' (org.intellij.plugins.postcss) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Less' (org.jetbrains.plugins.less) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'JavaScript Debugger' (JavaScriptDebugger) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Web' (com.intellij.spring.mvc) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Tailwind CSS' (com.intellij.tailwindcss) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Styled Components & Styled JSX' (com.deadlock.scsyntax) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Node.js' (NodeJS) requires plugin with id=JavaScriptDebugger to be enabled
+  Plugin 'Node.js Remote Interpreter' (org.jetbrains.plugins.node-remote-interpreter) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Next.js' (intellij.nextjs) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Karma' (Karma) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Kubernetes' (com.intellij.kubernetes) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Dev Containers' (org.jetbrains.plugins.docker.gateway) has dependency on 'JetBrains Ultimate' which cannot be loaded
+2026-04-29 16:52:02,671 [    617]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.project.impl.ProjectStoreFactory: com.intellij.configurationScript.providers.ConfigurationScriptProjectStoreFactory attempts to override com.intellij.configurationStore.PlatformLangProjectStoreFactory, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-04-29 16:52:02,681 [    627]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.modcommand.ModCommandExecutor: com.jetbrains.rdserver.ui.intentions.RemoteModCommandExecutor attempts to override com.intellij.lang.impl.modcommand.ModCommandExecutorImpl, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-04-29 16:52:02,920 [    866]   WARN - #c.i.o.v.n.p.FSRecords - Records storage [/home/neel/.cache/JetBrains/IntelliJIdea2026.1/caches/records.dat] was in use by process [OwnershipInfo{owner pid: 27871, acquired at: 1777439864320}] which is not exist now (wasn't closed properly/crashed?) -> re-acquiring forcibly
+2026-04-29 16:52:02,923 [    869]   WARN - #c.i.o.v.n.p.m.c.VFSContentStorageOverMMappedFile - Content map[/home/neel/.cache/JetBrains/IntelliJIdea2026.1/caches/content.dat.hashToId] is empty (or dropped) while content storage is not: re-building map from the storage
+2026-04-29 16:52:03,040 [    986]   WARN - #c.i.o.v.n.p.PersistentFSLoader - [VFS load problem]: VFS wasn't safely shut down: records.wasClosedProperly is false
+2026-04-29 16:52:03,047 [    993]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Default.Dark is deprecated for new UI themes, use Checkbox.Background.Default instead
+2026-04-29 16:52:03,047 [    993]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Default.Dark is deprecated for new UI themes, use Checkbox.Border.Default instead
+2026-04-29 16:52:03,047 [    993]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Selected.Dark is deprecated for new UI themes, use Checkbox.Border.Selected instead
+2026-04-29 16:52:03,047 [    993]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Selected.Dark is deprecated for new UI themes, use Checkbox.Foreground.Selected instead
+2026-04-29 16:52:03,047 [    993]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Focus.Wide.Dark is deprecated for new UI themes, use Checkbox.Focus.Wide instead
+2026-04-29 16:52:03,047 [    993]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Default.Dark is not supported and therefore ignored
+2026-04-29 16:52:03,047 [    993]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Selected.Dark is not supported and therefore ignored
+2026-04-29 16:52:03,048 [    994]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Disabled.Dark is deprecated for new UI themes, use Checkbox.Background.Disabled instead
+2026-04-29 16:52:03,048 [    994]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Selected.Dark is deprecated for new UI themes, use Checkbox.Background.Selected instead
+2026-04-29 16:52:03,048 [    994]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Disabled.Dark is deprecated for new UI themes, use Checkbox.Border.Disabled instead
+2026-04-29 16:52:03,048 [    994]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Disabled.Dark is deprecated for new UI themes, use Checkbox.Foreground.Disabled instead
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+SLF4J(E): A service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: org.slf4j.jul.JULServiceProvider not a subtype
+2026-04-29 16:52:03,176 [   1122]   WARN - #c.i.s.c.i.StationSocketConnectionLoop - Discovery connection failed with NoSuchFileException (/run/user/1000/jb.station.sock)
+2026-04-29 16:52:03,966 [   1912]   WARN - #c.i.o.v.n.p.PersistentFSLoader - [VFS load problem]: NOT_CLOSED_PROPERLY recovered, no problems remain
+2026-04-29 16:52:04.425 [DBG] [oshi.util.FileUtil] No {} file found from ClassLoader {}:[Ljava.lang.Object;@43c832a0
+2026-04-29 16:52:04.436 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@ddaf990
+2026-04-29 16:52:04.437 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7ae93766
+2026-04-29 16:52:04.440 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1dc31484
+2026-04-29 16:52:04.443 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1c80edc4
+2026-04-29 16:52:04.443 [DBG] [oshi.software.os.linux.LinuxOperatingSystem] os-release: {}:[Ljava.lang.Object;@2843f902
+2026-04-29 16:52:04.443 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@39318206
+2026-04-29 16:52:04.447 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@10683b75
+2026-04-29 16:52:04.447 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2f57a31c
+2026-04-29 16:52:04.447 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1b9be2f3
+2026-04-29 16:52:04.447 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@24a23640
+2026-04-29 16:52:04.448 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@75400232
+2026-04-29 16:52:04.448 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@679d10c5
+2026-04-29 16:52:04.448 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@16f0c8a3
+2026-04-29 16:52:04.448 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@635419dd
+2026-04-29 16:52:08,960 [   6906]   WARN - #c.i.s.c.i.StationSocketConnectionLoop - RecentProjects connection failed with NoSuchFileException (/run/user/1000/jb.station.sock)
+2026-04-29 16:52:09,206 [   7152]   WARN - #c.i.v.g.r.GitRepositoriesHolder - State of repository RepositoryId(projectId=ProjectId#ceutojhtvub0dehik8bj, rootPath=/home/neel/PROJECTS/Teacher_Content_Portal/Teacher_Content_Portal) is not synchronized. Known repositories are: 
+2026-04-29 16:53:04.456 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@52329635
+2026-04-29 16:53:04.456 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@371c9a9e
+2026-04-29 16:53:04.456 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@236b691f
+2026-04-29 16:53:04.457 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@47b26d89
+2026-04-29 16:53:04.457 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1f7d874
+2026-04-29 16:53:04.457 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@52ec6abe
+2026-04-29 16:53:56,337 [ 114283]   WARN - org.apache.velocity.deprecation - configuration key 'resource.loader' has been deprecated in favor of 'resource.loaders'
+2026-04-29 16:53:56,339 [ 114285]   WARN - org.apache.velocity.deprecation - configuration key 'includes.resource.loader.class' has been deprecated in favor of 'resource.loader.includes.class'
+2026-04-29 16:53:56,391 [ 114337]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,405 [ 114351]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,407 [ 114353]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,437 [ 114383]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,438 [ 114384]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,438 [ 114384]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,449 [ 114395]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,450 [ 114396]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,450 [ 114396]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,892 [ 114838]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,892 [ 114838]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,893 [ 114839]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,924 [ 114870]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,924 [ 114870]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,924 [ 114870]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,938 [ 114884]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,939 [ 114885]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:56,939 [ 114885]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,281 [ 116227]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,281 [ 116227]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,281 [ 116227]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,297 [ 116243]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,297 [ 116243]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,297 [ 116243]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,313 [ 116259]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,313 [ 116259]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:53:58,313 [ 116259]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:54:04.464 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@214dc184
+2026-04-29 16:54:04.465 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@9657503
+2026-04-29 16:54:04.465 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2b8d67ba
+2026-04-29 16:54:04.465 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@77286cdd
+2026-04-29 16:54:04.465 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3826d25d
+2026-04-29 16:54:04.466 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1ac96537
+2026-04-29 16:55:04.473 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1bb17451
+2026-04-29 16:55:04.473 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@27f295d5
+2026-04-29 16:55:04.474 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7da5971
+2026-04-29 16:55:04.474 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6c8678a9
+2026-04-29 16:55:04.474 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7c858a94
+2026-04-29 16:55:04.474 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4feaf4ec
+2026-04-29 16:55:05,556 [ 183502]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,556 [ 183502]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,556 [ 183502]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,582 [ 183528]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,582 [ 183528]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,582 [ 183528]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,595 [ 183541]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,596 [ 183542]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,596 [ 183542]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,877 [ 183823]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,877 [ 183823]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,878 [ 183824]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,894 [ 183840]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,894 [ 183840]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,895 [ 183841]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,906 [ 183852]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,906 [ 183852]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:05,906 [ 183852]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,095 [ 184041]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,095 [ 184041]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,096 [ 184042]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,112 [ 184058]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,113 [ 184059]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,113 [ 184059]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,131 [ 184077]   WARN - org.apache.velocity.introspection - Cannot retrieve method getPropertyName from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,132 [ 184078]   WARN - org.apache.velocity.introspection - Cannot retrieve method sanitizeJavaIdentifier from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:55:06,132 [ 184078]   WARN - org.apache.velocity.introspection - Cannot retrieve method capitalizeWithJavaBeanConvention from object of class java.lang.Class due to security restrictions.
+2026-04-29 16:56:04.481 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@552e81a5
+2026-04-29 16:56:04.481 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3e1b7ad5
+2026-04-29 16:56:04.481 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@11b5d499
+2026-04-29 16:56:04.482 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6c260769
+2026-04-29 16:56:04.482 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4da480e1
+2026-04-29 16:56:04.482 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@288c8652
+2026-04-29 16:57:04.486 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2c113c74
+2026-04-29 16:57:04.486 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@abe83da
+2026-04-29 16:57:04.486 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@10ed4c23
+2026-04-29 16:57:04.486 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1e852bbe
+2026-04-29 16:57:04.486 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3b525686
+2026-04-29 16:57:04.486 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@450cb265
+2026-04-29 16:58:04.491 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4bd05398
+2026-04-29 16:58:04.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@332dac
+2026-04-29 16:58:04.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2070bd3d
+2026-04-29 16:58:04.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@49f86d7c
+2026-04-29 16:58:04.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7dab48
+2026-04-29 16:58:04.492 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@193ab8a6
+2026-04-29 16:59:04.497 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6b09c999
+2026-04-29 16:59:04.498 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2f300de2
+2026-04-29 16:59:04.498 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@26bc32a2
+2026-04-29 16:59:04.498 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@229d5bf5
+2026-04-29 16:59:04.498 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7fd1b3e
+2026-04-29 16:59:04.498 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@288d593e
+2026-04-29 17:00:04.505 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@42784cf1
+2026-04-29 17:00:04.505 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@45a3274c
+2026-04-29 17:00:04.505 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4c800a58
+2026-04-29 17:00:04.505 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5ede3eb9
+2026-04-29 17:00:04.506 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5e41fe57
+2026-04-29 17:00:04.506 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2042b94
+2026-04-29 17:01:04.511 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7f38666b
+2026-04-29 17:01:04.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@654b894c
+2026-04-29 17:01:04.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7bcfb842
+2026-04-29 17:01:04.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5ffe7b13
+2026-04-29 17:01:04.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@634955b9
+2026-04-29 17:01:04.512 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5a71b175
+2026-04-29 17:02:04.518 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3e059192
+2026-04-29 17:02:04.518 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@762e8dbf
+2026-04-29 17:02:04.518 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7d4a11fa
+2026-04-29 17:02:04.518 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@75ec6123
+2026-04-29 17:02:04.519 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@67f7f70d
+2026-04-29 17:02:04.519 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@65b6cd39
+2026-04-29 17:03:04.525 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@686a8802
+2026-04-29 17:03:04.525 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@565978e8
+2026-04-29 17:03:04.525 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@667d48
+2026-04-29 17:03:04.525 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@29e18554
+2026-04-29 17:03:04.525 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@157722f2
+2026-04-29 17:03:04.525 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@874868c
+2026-04-29 17:04:04.531 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@12cf1cc6
+2026-04-29 17:04:04.531 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@30d3121d
+2026-04-29 17:04:04.531 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@488aee60
+2026-04-29 17:04:04.531 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@16f4178b
+2026-04-29 17:04:04.531 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7cb710bf
+2026-04-29 17:04:04.531 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@54dca6ce
+2026-04-29 17:05:04.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@58c0f36
+2026-04-29 17:05:04.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@47a9ed9b
+2026-04-29 17:05:04.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@732d84f3
+2026-04-29 17:05:04.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5fa76d92
+2026-04-29 17:05:04.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3ab72cef
+2026-04-29 17:05:04.537 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@327acb17
+2026-04-29 17:06:04.542 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2b9b4b94
+2026-04-29 17:06:04.542 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4f638d28
+2026-04-29 17:06:04.542 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@13771b66
+2026-04-29 17:06:04.542 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@67452a4b
+2026-04-29 17:06:04.543 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@16731adc
+2026-04-29 17:06:04.543 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@452adff7
+2026-04-29 17:07:04.547 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@296bb8d2
+2026-04-29 17:07:04.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@10abf07a
+2026-04-29 17:07:04.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@42c33fde
+2026-04-29 17:07:04.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@28e7408f
+2026-04-29 17:07:04.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5cbec069
+2026-04-29 17:07:04.548 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1359d3a4
+2026-04-29 17:08:04.554 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5888b0e5
+2026-04-29 17:08:04.554 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@48d732bc
+2026-04-29 17:08:04.554 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@39e18145
+2026-04-29 17:08:04.554 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7329d118
+2026-04-29 17:08:04.554 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6e3b4800
+2026-04-29 17:08:04.554 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1f88d5a9
+2026-04-29 17:09:04.560 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1e39a11b
+2026-04-29 17:09:04.560 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3dbb2dec
+2026-04-29 17:09:04.560 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@40be7a6e
+2026-04-29 17:09:04.560 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@491ef1e8
+2026-04-29 17:09:04.560 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1a7cb0a9
+2026-04-29 17:09:04.560 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7e4c2a47
+2026-04-29 17:10:04.567 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@70d669c7
+2026-04-29 17:10:04.567 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3839d5aa
+2026-04-29 17:10:04.567 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@18d44335
+2026-04-29 17:10:04.567 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@69d688af
+2026-04-29 17:10:04.568 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2a8d5c03
+2026-04-29 17:10:04.568 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5c6f487d
+2026-04-29 17:11:04.573 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7a9d06ad
+2026-04-29 17:11:04.573 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@20b5536b
+2026-04-29 17:11:04.573 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@608a4f7e
+2026-04-29 17:11:04.573 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@297ea5e3
+2026-04-29 17:11:04.574 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3bc4760f
+2026-04-29 17:11:04.574 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@31e04417
+2026-04-29 17:12:04.579 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1111f440
+2026-04-29 17:12:04.579 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1c9765e
+2026-04-29 17:12:04.579 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@13cf878f
+2026-04-29 17:12:04.579 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@661a54d1
+2026-04-29 17:12:04.580 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@78b71fa6
+2026-04-29 17:12:04.580 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3286ed68
+2026-04-29 17:13:04.585 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@314a4b57
+2026-04-29 17:13:04.585 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6369eb3a
+2026-04-29 17:13:04.585 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@634fa357
+2026-04-29 17:13:04.585 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5df1cc45
+2026-04-29 17:13:04.586 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3e02345f
+2026-04-29 17:13:04.586 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@121e389e
+2026-04-29 17:14:04.591 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5bdc02f5
+2026-04-29 17:14:04.591 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@23b57965
+2026-04-29 17:14:04.591 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@34a3978a
+2026-04-29 17:14:04.591 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@46b8cc33
+2026-04-29 17:14:04.592 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7dc8a5bb
+2026-04-29 17:14:04.592 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@753e9536
+2026-04-29 17:15:04.597 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@255ac7a7
+2026-04-29 17:15:04.597 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4edf8aee
+2026-04-29 17:15:04.597 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1eda5e1e
+2026-04-29 17:15:04.597 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@74491e13
+2026-04-29 17:15:04.597 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@75d88c2
+2026-04-29 17:15:04.597 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3567fa3d
+2026-04-29 17:16:04.602 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@43026e30
+2026-04-29 17:16:04.602 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1d8fc071
+2026-04-29 17:16:04.602 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6de01de9
+2026-04-29 17:16:04.602 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@73a7044c
+2026-04-29 17:16:04.603 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@238497e6
+2026-04-29 17:16:04.603 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@40eb57af
+2026-04-29 17:17:04.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@383e7685
+2026-04-29 17:17:04.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@310ecf6d
+2026-04-29 17:17:04.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@18835dc7
+2026-04-29 17:17:04.607 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@38340e0b
+2026-04-29 17:17:04.608 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7375ddd6
+2026-04-29 17:17:04.608 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@34471172
+2026-04-29 17:18:04.614 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@31339f91
+2026-04-29 17:18:04.614 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@950dbe3
+2026-04-29 17:18:04.614 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@156779eb
+2026-04-29 17:18:04.614 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@115aeb55
+2026-04-29 17:18:04.614 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3c3831f8
+2026-04-29 17:18:04.614 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@33b86a5f
+2026-04-29 17:19:04.619 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@bce7df0
+2026-04-29 17:19:04.620 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@36ba3cab
+2026-04-29 17:19:04.620 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@48f54085
+2026-04-29 17:19:04.620 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@62d1e068
+2026-04-29 17:19:04.620 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1a88303f
+2026-04-29 17:19:04.620 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7db008a1
+2026-04-29 17:20:04.625 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@51660a2d
+2026-04-29 17:20:04.625 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1dbee3b6
+2026-04-29 17:20:04.626 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6f39253f
+2026-04-29 17:20:04.626 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@376df121
+2026-04-29 17:20:04.626 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@56bbb283
+2026-04-29 17:20:04.626 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3cf248b1
+2026-04-29 17:21:04.630 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2e064ddd
+2026-04-29 17:21:04.630 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4582fd47
+2026-04-29 17:21:04.630 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@21d8a2c
+2026-04-29 17:21:04.630 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4475dafc
+2026-04-29 17:21:04.631 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@58810f0a
+2026-04-29 17:21:04.631 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@a3ba998
+2026-04-29 17:22:04.635 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@55f0d89d
+2026-04-29 17:22:04.635 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2dbe945e
+2026-04-29 17:22:04.636 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@14eb866
+2026-04-29 17:22:04.636 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5e155a31
+2026-04-29 17:22:04.636 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@df2555e
+2026-04-29 17:22:04.636 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@54b73cda
+2026-04-29 17:23:04.640 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4dcf3bd0
+2026-04-29 17:23:04.641 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@265c137a
+2026-04-29 17:23:04.641 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@e4284c1
+2026-04-29 17:23:04.641 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@20775ee6
+2026-04-29 17:23:04.641 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1452f083
+2026-04-29 17:23:04.641 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5253f6b0
+2026-04-29 17:24:04.646 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@71e01005
+2026-04-29 17:24:04.646 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@240eef45
+2026-04-29 17:24:04.646 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@78893db
+2026-04-29 17:24:04.647 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7f64f89e
+2026-04-29 17:24:04.647 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@e75af4f
+2026-04-29 17:24:04.647 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5dd21d03
+2026-04-29 17:25:04.652 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7c7b85cd
+2026-04-29 17:25:04.652 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1b0992d3
+2026-04-29 17:25:04.653 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7a2b3446
+2026-04-29 17:25:04.653 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4d2c2ba5
+2026-04-29 17:25:04.653 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6d598a20
+2026-04-29 17:25:04.653 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3a110252
+2026-04-29 17:26:04.658 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2a4512ec
+2026-04-29 17:26:04.658 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@58be8768
+2026-04-29 17:26:04.658 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@c2ad64b
+2026-04-29 17:26:04.658 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7e966500
+2026-04-29 17:26:04.658 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7c46ca4c
+2026-04-29 17:26:04.658 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@50ef876b
+2026-04-29 17:27:04.663 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7654d984
+2026-04-29 17:27:04.663 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6184dd24
+2026-04-29 17:27:04.663 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@327a4f60
+2026-04-29 17:27:04.663 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@46c274b5
+2026-04-29 17:27:04.663 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@168a1d10
+2026-04-29 17:27:04.663 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@51209f18
+2026-04-29 17:28:04.668 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@29c2710e
+2026-04-29 17:28:04.668 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@676ef38d
+2026-04-29 17:28:04.669 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7a3cb3f5
+2026-04-29 17:28:04.669 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@10c2331e
+2026-04-29 17:28:04.669 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2ab26a09
+2026-04-29 17:28:04.669 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3ad01649
+2026-04-29 17:29:04.673 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@56ffbc89
+2026-04-29 17:29:04.673 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@700bc260
+2026-04-29 17:29:04.674 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2ab32793
+2026-04-29 17:29:04.674 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1e68144e
+2026-04-29 17:29:04.674 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@35d8f8fe
+2026-04-29 17:29:04.674 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1bee34e7
+2026-04-29 17:30:04.679 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@54cb6630
+2026-04-29 17:30:04.679 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@35e9bb2b
+2026-04-29 17:30:04.679 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6d843fd2
+2026-04-29 17:30:04.679 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2e7298ad
+2026-04-29 17:30:04.679 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@218781b5
+2026-04-29 17:30:04.680 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@594f564d
+2026-04-29 17:30:19,559 [2297505] SEVERE - sun.awt.wl.WLToolkit - Wayland protocol I/O error
+ERROR: Thread context was already set: InstalledThreadContext(snapshot=null, context=EmptyCoroutineContext). 
+ Most likely, you are using 'runBlocking' instead of 'runBlockingCancellable' somewhere in the asynchronous stack. 
+Also, if you have any kind of manual event queue draining/pumping/flushing/etc 
+you have to wrap the loop with `resetThreadContext().use { // your queue draining code }`. 
+See usages of resetThreadContext().
+java.lang.Throwable: Thread context was already set: InstalledThreadContext(snapshot=null, context=EmptyCoroutineContext). 
+ Most likely, you are using 'runBlocking' instead of 'runBlockingCancellable' somewhere in the asynchronous stack. 
+Also, if you have any kind of manual event queue draining/pumping/flushing/etc 
+you have to wrap the loop with `resetThreadContext().use { // your queue draining code }`. 
+See usages of resetThreadContext().
+	at com.intellij.concurrency.ThreadContext.installThreadContext$lambda$1(threadContext.kt:321)
+	at com.intellij.concurrency.ThreadContext.withThreadLocal(threadContext.kt:409)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:317)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:304)
+	at com.intellij.concurrency.ThreadContext.installThreadContext$default(threadContext.kt:303)
+	at com.intellij.openapi.wm.impl.WindowCloseListener.windowClosing(ProjectFrameHelper.kt:671)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.Window.processWindowEvent(Window.java:2037)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(JFrame.java:298)
+	at java.desktop/java.awt.Window.processEvent(Window.java:1996)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5008)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4836)
+	at java.desktop/sun.awt.wl.WLToolkit.lambda$shutDownAfterServerError$1(WLToolkit.java:342)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4264)
+	at java.desktop/sun.awt.wl.WLToolkit.lambda$shutDownAfterServerError$0(WLToolkit.java:342)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:192)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:192)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:198)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:192)
+	at com.intellij.util.concurrency.ContextRunnable.lambda$run$0(ContextRunnable.java:26)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.util.concurrency.ContextRunnable.run(ContextRunnable.java:25)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:720)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:573)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0$0(IdeEventQueue.kt:381)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:928)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:380)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1110)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1110)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:375)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:415)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+	Suppressed: java.lang.Throwable: To enable stack trace recording set log category '#com.intellij.concurrency' to 'trace'
+		at com.intellij.concurrency.ThreadContext.tracingHint(threadContext.kt:517)
+		at com.intellij.concurrency.ThreadContext.installThreadContext$lambda$1(threadContext.kt:326)
+		... 44 more
+2026-04-29 17:30:19,566 [2297512] SEVERE - #c.i.i.p.PluginManager - Thread context was already set: InstalledThreadContext(snapshot=null, context=EmptyCoroutineContext). 
+ Most likely, you are using 'runBlocking' instead of 'runBlockingCancellable' somewhere in the asynchronous stack. 
+Also, if you have any kind of manual event queue draining/pumping/flushing/etc 
+you have to wrap the loop with `resetThreadContext().use { // your queue draining code }`. 
+See usages of resetThreadContext().
+java.lang.AssertionError: Thread context was already set: InstalledThreadContext(snapshot=null, context=EmptyCoroutineContext). 
+ Most likely, you are using 'runBlocking' instead of 'runBlockingCancellable' somewhere in the asynchronous stack. 
+Also, if you have any kind of manual event queue draining/pumping/flushing/etc 
+you have to wrap the loop with `resetThreadContext().use { // your queue draining code }`. 
+See usages of resetThreadContext().
+	at com.intellij.openapi.diagnostic.DefaultLogger.error(DefaultLogger.java:91)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:439)
+	at com.intellij.concurrency.ThreadContext.installThreadContext$lambda$1(threadContext.kt:321)
+	at com.intellij.concurrency.ThreadContext.withThreadLocal(threadContext.kt:409)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:317)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:304)
+	at com.intellij.concurrency.ThreadContext.installThreadContext$default(threadContext.kt:303)
+	at com.intellij.openapi.wm.impl.WindowCloseListener.windowClosing(ProjectFrameHelper.kt:671)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.Window.processWindowEvent(Window.java:2037)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(JFrame.java:298)
+	at java.desktop/java.awt.Window.processEvent(Window.java:1996)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5008)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4836)
+	at java.desktop/sun.awt.wl.WLToolkit.lambda$shutDownAfterServerError$1(WLToolkit.java:342)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4264)
+	at java.desktop/sun.awt.wl.WLToolkit.lambda$shutDownAfterServerError$0(WLToolkit.java:342)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:192)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:192)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:198)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:192)
+	at com.intellij.util.concurrency.ContextRunnable.lambda$run$0(ContextRunnable.java:26)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.util.concurrency.ContextRunnable.run(ContextRunnable.java:25)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:720)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:573)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0$0(IdeEventQueue.kt:381)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:928)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:380)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1110)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1110)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:375)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:415)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+Caused by: java.lang.Throwable: Thread context was already set: InstalledThreadContext(snapshot=null, context=EmptyCoroutineContext). 
+ Most likely, you are using 'runBlocking' instead of 'runBlockingCancellable' somewhere in the asynchronous stack. 
+Also, if you have any kind of manual event queue draining/pumping/flushing/etc 
+you have to wrap the loop with `resetThreadContext().use { // your queue draining code }`. 
+See usages of resetThreadContext().
+	... 45 more
+	Suppressed: java.lang.Throwable: To enable stack trace recording set log category '#com.intellij.concurrency' to 'trace'
+		at com.intellij.concurrency.ThreadContext.tracingHint(threadContext.kt:517)
+		at com.intellij.concurrency.ThreadContext.installThreadContext$lambda$1(threadContext.kt:326)
+		... 44 more
+2026-04-29 17:30:19,569 [2297515] SEVERE - #c.i.i.p.PluginManager - IntelliJ IDEA 2026.1  Build #IU-261.22158.277
+2026-04-29 17:30:19,569 [2297515] SEVERE - #c.i.i.p.PluginManager - JDK: 25.0.2; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-04-29 17:30:19,569 [2297515] SEVERE - #c.i.i.p.PluginManager - OS: Linux
+2026-04-29 17:30:19,571 [2297517] SEVERE - #c.i.i.p.PluginManager - Last Action: EditorPaste
+2026-04-29 17:30:19,575 [2297521] SEVERE - #c.i.o.a.i.ExceptionsKt - Unhandled exception in EDT
+com.intellij.openapi.diagnostic.UnhandledException: Thread context was already set: InstalledThreadContext(snapshot=null, context=EmptyCoroutineContext). 
+ Most likely, you are using 'runBlocking' instead of 'runBlockingCancellable' somewhere in the asynchronous stack. 
+Also, if you have any kind of manual event queue draining/pumping/flushing/etc 
+you have to wrap the loop with `resetThreadContext().use { // your queue draining code }`. 
+See usages of resetThreadContext().
+	at com.intellij.openapi.application.impl.ExceptionsKt.processUnhandledException(exceptions.kt:55)
+	at com.intellij.platform.ide.bootstrap.StartupErrorReporter.processException(StartupErrorReporter.java:338)
+	at com.intellij.ide.IdeEventQueue.processException(IdeEventQueue.kt:465)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:727)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:573)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0$0(IdeEventQueue.kt:381)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:928)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:380)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$0(IdeEventQueue.kt:1110)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:106)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1110)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:375)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:415)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+Caused by: java.lang.AssertionError: Thread context was already set: InstalledThreadContext(snapshot=null, context=EmptyCoroutineContext). 
+ Most likely, you are using 'runBlocking' instead of 'runBlockingCancellable' somewhere in the asynchronous stack. 
+Also, if you have any kind of manual event queue draining/pumping/flushing/etc 
+you have to wrap the loop with `resetThreadContext().use { // your queue draining code }`. 
+See usages of resetThreadContext().
+	at com.intellij.openapi.diagnostic.DefaultLogger.error(DefaultLogger.java:91)
+	at com.intellij.openapi.diagnostic.Logger.error(Logger.java:439)
+	at com.intellij.concurrency.ThreadContext.installThreadContext$lambda$1(threadContext.kt:321)
+	at com.intellij.concurrency.ThreadContext.withThreadLocal(threadContext.kt:409)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:317)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:304)
+	at com.intellij.concurrency.ThreadContext.installThreadContext$default(threadContext.kt:303)
+	at com.intellij.openapi.wm.impl.WindowCloseListener.windowClosing(ProjectFrameHelper.kt:671)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.AWTEventMulticaster.windowClosing(AWTEventMulticaster.java:359)
+	at java.desktop/java.awt.Window.processWindowEvent(Window.java:2037)
+	at java.desktop/javax.swing.JFrame.processWindowEvent(JFrame.java:298)
+	at java.desktop/java.awt.Window.processEvent(Window.java:1996)
+	at java.desktop/java.awt.Component.dispatchEventImpl(Component.java:5008)
+	at java.desktop/java.awt.Container.dispatchEventImpl(Container.java:2318)
+	at java.desktop/java.awt.Window.dispatchEventImpl(Window.java:2713)
+	at java.desktop/java.awt.Component.dispatchEvent(Component.java:4836)
+	at java.desktop/sun.awt.wl.WLToolkit.lambda$shutDownAfterServerError$1(WLToolkit.java:342)
+	at java.base/java.util.Arrays$ArrayList.forEach(Arrays.java:4264)
+	at java.desktop/sun.awt.wl.WLToolkit.lambda$shutDownAfterServerError$0(WLToolkit.java:342)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:192)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:192)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:198)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:192)
+	at com.intellij.util.concurrency.ContextRunnable.lambda$run$0(ContextRunnable.java:26)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.util.concurrency.ContextRunnable.run(ContextRunnable.java:25)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:323)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:732)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:711)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:720)
+	... 15 more
+Caused by: java.lang.Throwable: Thread context was already set: InstalledThreadContext(snapshot=null, context=EmptyCoroutineContext). 
+ Most likely, you are using 'runBlocking' instead of 'runBlockingCancellable' somewhere in the asynchronous stack. 
+Also, if you have any kind of manual event queue draining/pumping/flushing/etc 
+you have to wrap the loop with `resetThreadContext().use { // your queue draining code }`. 
+See usages of resetThreadContext().
+	... 45 more
+	Suppressed: java.lang.Throwable: To enable stack trace recording set log category '#com.intellij.concurrency' to 'trace'
+		at com.intellij.concurrency.ThreadContext.tracingHint(threadContext.kt:517)
+		at com.intellij.concurrency.ThreadContext.installThreadContext$lambda$1(threadContext.kt:326)
+		... 44 more
+2026-04-29 17:30:19,577 [2297523] SEVERE - #c.i.o.a.i.ExceptionsKt - IntelliJ IDEA 2026.1  Build #IU-261.22158.277
+2026-04-29 17:30:19,577 [2297523] SEVERE - #c.i.o.a.i.ExceptionsKt - JDK: 25.0.2; VM: OpenJDK 64-Bit Server VM; Vendor: JetBrains s.r.o.
+2026-04-29 17:30:19,577 [2297523] SEVERE - #c.i.o.a.i.ExceptionsKt - OS: Linux
+2026-04-29 17:30:19,577 [2297523] SEVERE - #c.i.o.a.i.ExceptionsKt - Last Action: EditorPaste
+2026-04-29 21:08:15,372 [    529]   WARN - #c.i.i.p.PluginManager - Problems found loading plugins:
+  Plugin 'Refactor-X' (Refactor-X) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Cron Expressions' (com.intellij.cron) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Apache Velocity' (com.intellij.velocity) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'FTP/SFTP/WebDAV Connectivity' (com.jetbrains.plugins.webDeployment) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'SSH Remote Run' (org.jetbrains.plugins.remote-run) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'In-Editor Performance Hints' (com.intellij.LineProfiler) requires plugin with id=com.intellij.modules.ultimate to be enabled
+  Plugin 'Spring Messaging' (com.intellij.spring.messaging) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Modulith' (com.intellij.spring.modulith) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Cloud' (com.intellij.spring.cloud) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Security' (com.intellij.spring.security) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Integration Patterns' (com.intellij.spring.integration) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: RESTful Web Services (JAX-RS)' (com.jetbrains.restWebServices) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Messaging (JMS)' (com.intellij.javaee.extensions) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Contexts and Dependency Injection (CDI)' (com.intellij.cdi) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Bean Validation' (com.intellij.beanValidation) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'FreeMarker' (com.intellij.freemarker) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'AOP Pointcut Language' (com.intellij.aop) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Remote Development Gateway' (com.jetbrains.gateway) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'JVM Persistence Frameworks' (com.intellij.persistence) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Quarkus' (com.intellij.quarkus) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Micronaut' (com.intellij.micronaut) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Persistence (JPA)' (com.intellij.javaee.jpa) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Data' (com.intellij.spring.data) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Reverse Engineering' (com.intellij.javaee.reverseEngineering) requires plugin with id=com.intellij.javaee.jpa to be enabled
+  Plugin 'Jakarta EE: Data' (com.intellij.javaee.jakarta.data) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Application Servers' (com.intellij.javaee.app.servers.integration) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Tomcat and TomEE' (Tomcat) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'WildFly' (JBoss) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Hibernate' (com.intellij.hibernate) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Time Tracking' (com.intellij.tasks.timeTracking) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Sass' (org.jetbrains.plugins.sass) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Web/Servlets' (com.intellij.javaee.web) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Jakarta EE: Server Pages (JSP)' (com.intellij.jsp) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'PostCSS' (org.intellij.plugins.postcss) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Less' (org.jetbrains.plugins.less) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'JavaScript Debugger' (JavaScriptDebugger) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Spring Web' (com.intellij.spring.mvc) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Tailwind CSS' (com.intellij.tailwindcss) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Styled Components & Styled JSX' (com.deadlock.scsyntax) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Node.js' (NodeJS) requires plugin with id=JavaScriptDebugger to be enabled
+  Plugin 'Node.js Remote Interpreter' (org.jetbrains.plugins.node-remote-interpreter) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Next.js' (intellij.nextjs) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Karma' (Karma) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Kubernetes' (com.intellij.kubernetes) has dependency on 'JetBrains Ultimate' which cannot be loaded
+  Plugin 'Dev Containers' (org.jetbrains.plugins.docker.gateway) has dependency on 'JetBrains Ultimate' which cannot be loaded
+2026-04-29 21:08:15,438 [    595]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.openapi.project.impl.ProjectStoreFactory: com.intellij.configurationScript.providers.ConfigurationScriptProjectStoreFactory attempts to override com.intellij.configurationStore.PlatformLangProjectStoreFactory, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-04-29 21:08:15,445 [    602]   WARN - #c.i.p.instanceContainer - InstanceNotOverridableException: Override failed for com.intellij.modcommand.ModCommandExecutor: com.jetbrains.rdserver.ui.intentions.RemoteModCommandExecutor attempts to override com.intellij.lang.impl.modcommand.ModCommandExecutorImpl, but the existing implementation is not overriddable (not declared as 'open=true')
+2026-04-29 21:08:15,704 [    861]   WARN - #c.i.o.v.n.p.FSRecords - Records storage [/home/neel/.cache/JetBrains/IntelliJIdea2026.1/caches/records.dat] was in use by process [OwnershipInfo{owner pid: 23760, acquired at: 1777461722920}] which is not exist now (wasn't closed properly/crashed?) -> re-acquiring forcibly
+2026-04-29 21:08:15,707 [    864]   WARN - #c.i.o.v.n.p.m.c.VFSContentStorageOverMMappedFile - Content map[/home/neel/.cache/JetBrains/IntelliJIdea2026.1/caches/content.dat.hashToId] is empty (or dropped) while content storage is not: re-building map from the storage
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::allocateMemory has been called by io.netty.util.internal.PlatformDependent0$2
+WARNING: Please consider reporting this to the maintainers of class io.netty.util.internal.PlatformDependent0$2
+WARNING: sun.misc.Unsafe::allocateMemory will be removed in a future release
+SLF4J(E): A service provider failed to instantiate:
+org.slf4j.spi.SLF4JServiceProvider: org.slf4j.jul.JULServiceProvider not a subtype
+2026-04-29 21:08:15,838 [    995]   WARN - #c.i.o.v.n.p.PersistentFSLoader - [VFS load problem]: VFS wasn't safely shut down: records.wasClosedProperly is false
+2026-04-29 21:08:15,840 [    997]   WARN - #c.i.s.c.i.StationSocketConnectionLoop - Discovery connection failed with NoSuchFileException (/run/user/1000/jb.station.sock)
+2026-04-29 21:08:16,005 [   1162]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Default.Dark is deprecated for new UI themes, use Checkbox.Background.Default instead
+2026-04-29 21:08:16,005 [   1162]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Default.Dark is deprecated for new UI themes, use Checkbox.Border.Default instead
+2026-04-29 21:08:16,005 [   1162]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Selected.Dark is deprecated for new UI themes, use Checkbox.Border.Selected instead
+2026-04-29 21:08:16,005 [   1162]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Selected.Dark is deprecated for new UI themes, use Checkbox.Foreground.Selected instead
+2026-04-29 21:08:16,005 [   1162]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Focus.Wide.Dark is deprecated for new UI themes, use Checkbox.Focus.Wide instead
+2026-04-29 21:08:16,006 [   1163]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Default.Dark is not supported and therefore ignored
+2026-04-29 21:08:16,006 [   1163]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: color key Checkbox.Focus.Thin.Selected.Dark is not supported and therefore ignored
+2026-04-29 21:08:16,006 [   1163]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Disabled.Dark is deprecated for new UI themes, use Checkbox.Background.Disabled instead
+2026-04-29 21:08:16,006 [   1163]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Background.Selected.Dark is deprecated for new UI themes, use Checkbox.Background.Selected instead
+2026-04-29 21:08:16,006 [   1163]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Border.Disabled.Dark is deprecated for new UI themes, use Checkbox.Border.Disabled instead
+2026-04-29 21:08:16,006 [   1163]   WARN - #c.i.i.u.UiThemePaletteCheckBoxScope - Theme Islands Darcula: Checkbox.Foreground.Disabled.Dark is deprecated for new UI themes, use Checkbox.Foreground.Disabled instead
+2026-04-29 21:08:16,638 [   1795]   WARN - #c.i.o.v.n.p.PersistentFSLoader - [VFS load problem]: NOT_CLOSED_PROPERLY recovered, no problems remain
+2026-04-29 21:08:17.081 [DBG] [oshi.util.FileUtil] No {} file found from ClassLoader {}:[Ljava.lang.Object;@74529730
+2026-04-29 21:08:17.091 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@21b29c18
+2026-04-29 21:08:17.092 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@692e265b
+2026-04-29 21:08:17.095 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@58cc9e4
+2026-04-29 21:08:17.097 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1c6c0d80
+2026-04-29 21:08:17.097 [DBG] [oshi.software.os.linux.LinuxOperatingSystem] os-release: {}:[Ljava.lang.Object;@126f598e
+2026-04-29 21:08:17.098 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5cd29757
+2026-04-29 21:08:17.101 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@f5fef5e
+2026-04-29 21:08:17.101 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7d7f6977
+2026-04-29 21:08:17.102 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@248eb3ca
+2026-04-29 21:08:17.102 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@427aacf6
+2026-04-29 21:08:17.102 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@32af9ef8
+2026-04-29 21:08:17.102 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@349d6d0b
+2026-04-29 21:08:17.103 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@725695e0
+2026-04-29 21:08:17.103 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3cc09d0c
+2026-04-29 21:08:21,917 [   7074]   WARN - #c.i.s.c.i.StationSocketConnectionLoop - RecentProjects connection failed with NoSuchFileException (/run/user/1000/jb.station.sock)
+2026-04-29 21:08:22,013 [   7170]   WARN - #c.i.v.g.r.GitRepositoriesHolder - State of repository RepositoryId(projectId=ProjectId#4pdkcqb035bpot1i9ath, rootPath=/home/neel/PROJECTS/Teacher_Content_Portal/Teacher_Content_Portal) is not synchronized. Known repositories are: 
+2026-04-29 21:09:17.110 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@68f133e9
+2026-04-29 21:09:17.111 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@537832b9
+2026-04-29 21:09:17.111 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@66ad8953
+2026-04-29 21:09:17.111 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@fc44763
+2026-04-29 21:09:17.111 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6e4b5309
+2026-04-29 21:09:17.112 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@7cb45983
+2026-04-29 21:10:17.118 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@70606583
+2026-04-29 21:10:17.118 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@35d37d08
+2026-04-29 21:10:17.118 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6d5f3de
+2026-04-29 21:10:17.118 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@25e054f9
+2026-04-29 21:10:17.119 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@565f71bb
+2026-04-29 21:10:17.119 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@78ca7d45
+2026-04-29 21:11:17.124 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@40fac613
+2026-04-29 21:11:17.124 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@63853d63
+2026-04-29 21:11:17.125 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@4105e130
+2026-04-29 21:11:17.125 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@385f4c7f
+2026-04-29 21:11:17.125 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@2e83df39
+2026-04-29 21:11:17.125 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@64a791af
+2026-04-29 21:12:17.131 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@1f7c707e
+2026-04-29 21:12:17.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@3feafcb1
+2026-04-29 21:12:17.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@442f70c0
+2026-04-29 21:12:17.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@79b9225a
+2026-04-29 21:12:17.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@5ba5293
+2026-04-29 21:12:17.132 [DBG] [oshi.util.FileUtil] Reading file {}:[Ljava.lang.Object;@6d5d39e1

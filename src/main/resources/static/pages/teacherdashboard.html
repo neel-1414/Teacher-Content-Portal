@@ -37,14 +37,28 @@
     </main>
 </div>
 
-<!-- Create Folder Modal -->
 <div class="modal" id="folderModal">
     <div class="modal-content">
         <h3>Create Folder</h3>
 
         <input type="text" id="folderName" placeholder="Folder Name">
-        <input type="text" id="year" placeholder="Year">
-        <input type="text" id="branch" placeholder="Branch">
+        <select id="year" required>
+            <option value="">Select Year</option>
+            <option value="FIRST">First Year</option>
+            <option value="SECOND">Second Year</option>
+            <option value="THIRD">Third Year</option>
+            <option value="FOURTH">Fourth Year</option>
+        </select>
+
+        <select id="branch" required>
+            <option value="">Select Branch</option>
+            <option value="CSE">Computer Science</option>
+            <option value="IT">Information Technology</option>
+            <option value="EN">Electronics</option>
+            <option value="EE">Electrical </option>
+            <option value="MECH">Mechanical</option>
+            <option value="CIVIL">Civil</option>
+        </select>
 
         <div class="modal-actions">
             <button onclick="createFolder()">Create</button>
@@ -53,7 +67,6 @@
     </div>
 </div>
 
-<!-- Delete Folder Modal -->
 <div class="modal" id="deleteModal">
     <div class="modal-content small">
         <h3>Delete Folder?</h3>

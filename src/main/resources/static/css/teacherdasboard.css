@@ -410,3 +410,22 @@ input:focus {
     width: 100%;
   }
 }
+select {
+  width: 100%;
+  margin-bottom: 14px;   /* match input */
+  padding: 12px 14px;   /* match input */
+  border-radius: 12px;  /* match input */
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  background: #f9fafb;
+  font-family: "DM Sans", sans-serif;
+  outline: none;
+  appearance: none; /* remove default arrow (optional) */
+}
+
+/* Focus effect same as input */
+select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  background: white;
+}

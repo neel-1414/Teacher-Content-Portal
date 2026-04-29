@@ -5,7 +5,7 @@ public enum Branch {
     IT,
     MECH,
     CIVIL,
-    ECE,
-    ENTC,
+    EE,
+    EN,
     AIML
 }
